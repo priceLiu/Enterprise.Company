@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<nodes>
+  <node name="001" disk="\\192.168.0.244\CN100Public\PublicImage1"/>
+  <node name="002" disk="\\192.168.0.244\CN100Public\PublicImage2"/>
+  <node name="003" disk="\\192.168.0.244\CN100Public\PublicImage3"/>
+</nodes>

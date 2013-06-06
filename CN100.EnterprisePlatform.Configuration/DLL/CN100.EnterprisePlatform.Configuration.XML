@@ -1,0 +1,1630 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CN100.EnterprisePlatform.Configuration</name>
+    </assembly>
+    <members>
+        <member name="T:CN100.EnterprisePlatform.Configuration.SearchConfigHelper">
+            <summary>
+            搜索配置管理帮助
+            </summary>
+        </member>
+        <member name="P:CN100.EnterprisePlatform.Configuration.SearchConfigHelper.ProductDirectory">
+            <summary>
+            索引库保存位置(虚拟目录)
+            </summary>
+        </member>
+        <member name="P:CN100.EnterprisePlatform.Configuration.SearchConfigHelper.ProductPath">
+            <summary>
+            索引库保存位置(本地磁盘)
+            </summary>
+        </member>
+        <member name="P:CN100.EnterprisePlatform.Configuration.SearchConfigHelper.JobTime">
+            <summary>
+            隔间更新索引时间
+            </summary>
+        </member>
+        <member name="P:CN100.EnterprisePlatform.Configuration.SearchConfigHelper.DictPath">
+            <summary>
+            索引库位置
+            </summary>
+        </member>
+        <member name="T:CN100.EnterprisePlatform.Configuration.ConstManager">
+            <summary>
+            TODO: Update summary.
+            </summary>
+        </member>
+        <member name="T:CN100.EnterprisePlatform.Configuration.ConstManager.DomainConstManager">
+            <summary>
+            域名常量管理
+            </summary>
+        </member>
+        <member name="F:CN100.EnterprisePlatform.Configuration.ConstManager.DomainConstManager.MAINDOMAIN">
+            <summary>
+            主域名常量
+            </summary>
+        </member>
+        <member name="F:CN100.EnterprisePlatform.Configuration.ConstManager.DomainConstManager.PRODUCT">
+            <summary>
+            商品
+            </summary>
+        </member>
+        <member name="F:CN100.EnterprisePlatform.Configuration.ConstManager.DomainConstManager.SHOPPINGCART">
+            <summary>
+            购物车
+            </summary>
+        </member>
+        <member name="F:CN100.EnterprisePlatform.Configuration.ConstManager.DomainConstManager.PAY">
+            <summary>
+            支付
+            </summary>
+        </member>
+        <member name="F:CN100.EnterprisePlatform.Configuration.ConstManager.DomainConstManager.ORDER">
+            <summary>
+            订单
+            </summary>
+        </member>
+        <member name="F:CN100.EnterprisePlatform.Configuration.ConstManager.DomainConstManager.SEARCH">
+            <summary>
+            搜索
+            </summary>
+        </member>
+        <member name="F:CN100.EnterprisePlatform.Configuration.ConstManager.DomainConstManager.HELP">
+            <summary>
+            帮助中心
+            </summary>
+        </member>
+        <member name="F:CN100.EnterprisePlatform.Configuration.ConstManager.DomainConstManager.PROMOTION">
+            <summary>
+            直通车
+            </summary>
+        </member>
+        <member name="F:CN100.EnterprisePlatform.Configuration.ConstManager.DomainConstManager.ZHAOSHANG">
+            <summary>
+            招商中心
+            </summary>
+        </member>
+        <member name="F:CN100.EnterprisePlatform.Configuration.ConstManager.DomainConstManager.TUAN">
+            <summary>
+            团购
+            </summary>
+        </member>
+        <member name="F:CN100.EnterprisePlatform.Configuration.ConstManager.DomainConstManager.REG">
+            <summary>
+            注册
+            </summary>
+        </member>
+        <member name="F:CN100.EnterprisePlatform.Configuration.ConstManager.DomainConstManager.CHANNEL">
+            <summary>
+            频道
+            </summary>
+        </member>
+        <member name="F:CN100.EnterprisePlatform.Configuration.ConstManager.DomainConstManager.XIU">
+            <summary>
+            店铺装修
+            </summary>
+        </member>
+        <member name="F:CN100.EnterprisePlatform.Configuration.ConstManager.DomainConstManager.HOTSALE">
+            <summary>
+            热卖频道
+            </summary>
+        </member>
+        <member name="T:CN100.EnterprisePlatform.Configuration.ConstManager.SearchConstManager">
+            <summary>
+            搜索常量管理
+            </summary>
+        </member>
+        <member name="F:CN100.EnterprisePlatform.Configuration.ConstManager.SearchConstManager.PRODUCTDIRECTORY">
+            <summary>
+            索引库保存位置(虚拟目录)常量
+            </summary>
+        </member>
+        <member name="F:CN100.EnterprisePlatform.Configuration.ConstManager.SearchConstManager.PRODUCTPATH">
+            <summary>
+            索引库保存位置(本地磁盘)常量
+            </summary>
+        </member>
+        <member name="F:CN100.EnterprisePlatform.Configuration.ConstManager.SearchConstManager.JOBTIME">
+            <summary>
+            隔间更新索引时间常量
+            </summary>
+        </member>
+        <member name="F:CN100.EnterprisePlatform.Configuration.ConstManager.SearchConstManager.DICTPATH">
+            <summary>
+            索引库位置常量
+            </summary>
+        </member>
+        <member name="F:CN100.EnterprisePlatform.Configuration.ConstManager.MQConstManager.MQQUALITYSERVICE">
+            <summary>
+            质量得分运算中心
+            </summary>
+        </member>
+        <member name="T:CN100.EnterprisePlatform.Configuration.EmailConfigHelper">
+            <summary>
+            TODO: Update summary.
+            </summary>
+        </member>
+        <member name="T:CN100.EnterprisePlatform.Configuration.DomainHelper">
+            <summary>
+            域名管理
+            </summary>
+        </member>
+        <member name="P:CN100.EnterprisePlatform.Configuration.DomainHelper.MainDomain">
+            <summary>
+            主域名链接
+            http://www.cn100.com
+            </summary>
+        </member>
+        <member name="P:CN100.EnterprisePlatform.Configuration.DomainHelper.PruductDomain">
+            <summary>
+            商品域名链接
+            </summary>
+        </member>
+        <member name="P:CN100.EnterprisePlatform.Configuration.DomainHelper.OrderDomain">
+            <summary>
+            订单域名链接
+            </summary>
+        </member>
+        <member name="P:CN100.EnterprisePlatform.Configuration.DomainHelper.PayDomain">
+            <summary>
+            支付域名链接
+            </summary>
+        </member>
+        <member name="P:CN100.EnterprisePlatform.Configuration.DomainHelper.SearchDomain">
+            <summary>
+            搜索域名链接
+            </summary>
+        </member>
+        <member name="P:CN100.EnterprisePlatform.Configuration.DomainHelper.RegDomain">
+            <summary>
+            注册域名链接
+            </summary>
+        </member>
+        <member name="P:CN100.EnterprisePlatform.Configuration.DomainHelper.ChannelDomain">
+            <summary>
+            频道域名链接
+            </summary>
+        </member>
+        <member name="P:CN100.EnterprisePlatform.Configuration.DomainHelper.TuanDomain">
+            <summary>
+            团购域名链接
+            </summary>
+        </member>
+        <member name="P:CN100.EnterprisePlatform.Configuration.DomainHelper.XiuDomain">
+            <summary>
+            店铺装饰域名链接
+            </summary>
+        </member>
+        <member name="P:CN100.EnterprisePlatform.Configuration.DomainHelper.PromotionDomain">
+            <summary>
+            直通车域名链接
+            </summary>
+        </member>
+        <member name="P:CN100.EnterprisePlatform.Configuration.DomainHelper.ZhaoShangDomain">
+            <summary>
+            招商中心域名链接
+            </summary>
+        </member>
+        <member name="P:CN100.EnterprisePlatform.Configuration.DomainHelper.HelpDomain">
+            <summary>
+            帮助中心域名链接
+            </summary>
+        </member>
+        <member name="P:CN100.EnterprisePlatform.Configuration.DomainHelper.ShoppingCartDomain">
+            <summary>
+            购物车域名链接
+            </summary>
+        </member>
+        <member name="P:CN100.EnterprisePlatform.Configuration.DomainHelper.HotSaleDomain">
+            <summary>
+            热卖频道域名链接
+            </summary>
+        </member>
+        <member name="T:CN100.EnterprisePlatform.Configuration.DomainSection">
+            <summary>
+            The DomainSection Configuration Section.
+            </summary>
+        </member>
+        <member name="F:CN100.EnterprisePlatform.Configuration.DomainSection.DomainSectionSectionName">
+            <summary>
+            The XML name of the DomainSection Configuration Section.
+            </summary>
+        </member>
+        <member name="F:CN100.EnterprisePlatform.Configuration.DomainSection.XmlnsPropertyName">
+            <summary>
+            The XML name of the <see cref="P:CN100.EnterprisePlatform.Configuration.DomainSection.Xmlns"/> property.
+            </summary>
+        </member>
+        <member name="F:CN100.EnterprisePlatform.Configuration.DomainSection.UrlsPropertyName">
+            <summary>
+            The XML name of the <see cref="P:CN100.EnterprisePlatform.Configuration.DomainSection.Urls"/> property.
+            </summary>
+        </member>
+        <member name="M:CN100.EnterprisePlatform.Configuration.DomainSection.IsReadOnly">
+            <summary>
+            Gets a value indicating whether the element is read-only.
+            </summary>
+        </member>
+        <member name="P:CN100.EnterprisePlatform.Configuration.DomainSection.Instance">
+            <summary>
+            Gets the DomainSection instance.
+            </summary>
+        </member>
+        <member name="P:CN100.EnterprisePlatform.Configuration.DomainSection.Xmlns">
+            <summary>
+            Gets the XML namespace of this Configuration Section.
+            </summary>
+            <remarks>
+            This property makes sure that if the configuration file contains the XML namespace,
+            the parser doesn't throw an exception because it encounters the unknown "xmlns" attribute.
+            </remarks>
+        </member>
+        <member name="P:CN100.EnterprisePlatform.Configuration.DomainSection.Urls">
+            <summary>
+            Gets or sets the Urls.
+            </summary>
+        </member>
+        <member name="T:CN100.EnterprisePlatform.Configuration.DomainElementCollection">
+            <summary>
+            A collection of DomainElement instances.
+            </summary>
+        </member>
+        <member name="F:CN100.EnterprisePlatform.Configuration.DomainElementCollection.DomainElementPropertyName">
+            <summary>
+            The XML name of the individual <see cref="T:CN100.EnterprisePlatform.Configuration.DomainElement"/> instances in this collection.
+            </summary>
+        </member>
+        <member name="M:CN100.EnterprisePlatform.Configuration.DomainElementCollection.IsElementName(System.String)">
+            <summary>
+            Indicates whether the specified <see cref="T:System.Configuration.ConfigurationElement"/> exists in the <see cref="T:System.Configuration.ConfigurationElementCollection"/>.
+            </summary>
+            <param name="elementName">The name of the element to verify.</param>
+            <returns>
+            <see langword="true"/> if the element exists in the collection; otherwise, <see langword="false"/>.
+            </returns>
+        </member>
+        <member name="M:CN100.EnterprisePlatform.Configuration.DomainElementCollection.GetElementKey(System.Configuration.ConfigurationElement)">
+            <summary>
+            Gets the element key for the specified configuration element.
+            </summary>
+            <param name="element">The <see cref="T:System.Configuration.ConfigurationElement"/> to return the key for.</param>
+            <returns>
+            An <see cref="T:System.Object"/> that acts as the key for the specified <see cref="T:System.Configuration.ConfigurationElement"/>.
+            </returns>
+        </member>
+        <member name="M:CN100.EnterprisePlatform.Configuration.DomainElementCollection.CreateNewElement">
+            <summary>
+            Creates a new <see cref="T:CN100.EnterprisePlatform.Configuration.DomainElement"/>.
+            </summary>
+            <returns>
+            A new <see cref="T:CN100.EnterprisePlatform.Configuration.DomainElement"/>.
+            </returns>
+        </member>
+        <member name="M:CN100.EnterprisePlatform.Configuration.DomainElementCollection.Add(CN100.EnterprisePlatform.Configuration.DomainElement)">
+            <summary>
+            Adds the specified <see cref="T:CN100.EnterprisePlatform.Configuration.DomainElement"/> to the <see cref="T:System.Configuration.ConfigurationElementCollection"/>.
+            </summary>
+            <param name="url">The <see cref="T:CN100.EnterprisePlatform.Configuration.DomainElement"/> to add.</param>
+        </member>
+        <member name="M:CN100.EnterprisePlatform.Configuration.DomainElementCollection.Remove(CN100.EnterprisePlatform.Configuration.DomainElement)">
+            <summary>
+            Removes the specified <see cref="T:CN100.EnterprisePlatform.Configuration.DomainElement"/> from the <see cref="T:System.Configuration.ConfigurationElementCollection"/>.
+            </summary>
+            <param name="url">The <see cref="T:CN100.EnterprisePlatform.Configuration.DomainElement"/> to remove.</param>
+        </member>
+        <member name="M:CN100.EnterprisePlatform.Configuration.DomainElementCollection.GetItemAt(System.Int32)">
+            <summary>
+            Gets the <see cref="T:CN100.EnterprisePlatform.Configuration.DomainElement"/> at the specified index.
+            </summary>
+            <param name="index">The index of the <see cref="T:CN100.EnterprisePlatform.Configuration.DomainElement"/> to retrieve.</param>
+        </member>
+        <member name="M:CN100.EnterprisePlatform.Configuration.DomainElementCollection.GetItemByKey(System.String)">
+            <summary>
+            Gets the <see cref="T:CN100.EnterprisePlatform.Configuration.DomainElement"/> with the specified key.
+            </summary>
+            <param name="name">The key of the <see cref="T:CN100.EnterprisePlatform.Configuration.DomainElement"/> to retrieve.</param>
+        </member>
+        <member name="M:CN100.EnterprisePlatform.Configuration.DomainElementCollection.IsReadOnly">
+            <summary>
+            Gets a value indicating whether the element is read-only.
+            </summary>
+        </member>
+        <member name="P:CN100.EnterprisePlatform.Configuration.DomainElementCollection.CollectionType">
+            <summary>
+            Gets the type of the <see cref="T:System.Configuration.ConfigurationElementCollection"/>.
+            </summary>
+            <returns>The <see cref="T:System.Configuration.ConfigurationElementCollectionType"/> of this collection.</returns>
+        </member>
+        <member name="P:CN100.EnterprisePlatform.Configuration.DomainElementCollection.ElementName">
+            <summary>
+            Gets the name used to identify this collection of elements
+            </summary>
+        </member>
+        <member name="P:CN100.EnterprisePlatform.Configuration.DomainElementCollection.Item(System.Int32)">
+            <summary>
+            Gets the <see cref="T:CN100.EnterprisePlatform.Configuration.DomainElement"/> at the specified index.
+            </summary>
+            <param name="index">The index of the <see cref="T:CN100.EnterprisePlatform.Configuration.DomainElement"/> to retrieve.</param>
+        </member>
+        <member name="P:CN100.EnterprisePlatform.Configuration.DomainElementCollection.Item(System.Object)">
+            <summary>
+            Gets the <see cref="T:CN100.EnterprisePlatform.Configuration.DomainElement"/> with the specified key.
+            </summary>
+            <param name="name">The key of the <see cref="T:CN100.EnterprisePlatform.Configuration.DomainElement"/> to retrieve.</param>
+        </member>
+        <member name="T:CN100.EnterprisePlatform.Configuration.DomainElement">
+            <summary>
+            The DomainElement Configuration Element.
+            </summary>
+        </member>
+        <member name="F:CN100.EnterprisePlatform.Configuration.DomainElement.NamePropertyName">
+            <summary>
+            The XML name of the <see cref="P:CN100.EnterprisePlatform.Configuration.DomainElement.Name"/> property.
+            </summary>
+        </member>
+        <member name="F:CN100.EnterprisePlatform.Configuration.DomainElement.UrlPropertyName">
+            <summary>
+            The XML name of the <see cref="P:CN100.EnterprisePlatform.Configuration.DomainElement.Url"/> property.
+            </summary>
+        </member>
+        <member name="M:CN100.EnterprisePlatform.Configuration.DomainElement.IsReadOnly">
+            <summary>
+            Gets a value indicating whether the element is read-only.
+            </summary>
+        </member>
+        <member name="P:CN100.EnterprisePlatform.Configuration.DomainElement.Name">
+            <summary>
+            Gets or sets the Name.
+            </summary>
+        </member>
+        <member name="P:CN100.EnterprisePlatform.Configuration.DomainElement.Url">
+            <summary>
+            Gets or sets the Url.
+            </summary>
+        </member>
+        <member name="T:CN100.EnterprisePlatform.Configuration.WcfSection">
+            <summary>
+            The WcfSection Configuration Section.
+            </summary>
+        </member>
+        <member name="F:CN100.EnterprisePlatform.Configuration.WcfSection.WcfSectionSectionName">
+            <summary>
+            The XML name of the WcfSection Configuration Section.
+            </summary>
+        </member>
+        <member name="F:CN100.EnterprisePlatform.Configuration.WcfSection.XmlnsPropertyName">
+            <summary>
+            The XML name of the <see cref="P:CN100.EnterprisePlatform.Configuration.WcfSection.Xmlns"/> property.
+            </summary>
+        </member>
+        <member name="F:CN100.EnterprisePlatform.Configuration.WcfSection.HostsPropertyName">
+            <summary>
+            The XML name of the <see cref="P:CN100.EnterprisePlatform.Configuration.WcfSection.Hosts"/> property.
+            </summary>
+        </member>
+        <member name="M:CN100.EnterprisePlatform.Configuration.WcfSection.IsReadOnly">
+            <summary>
+            Gets a value indicating whether the element is read-only.
+            </summary>
+        </member>
+        <member name="P:CN100.EnterprisePlatform.Configuration.WcfSection.Instance">
+            <summary>
+            Gets the WcfSection instance.
+            </summary>
+        </member>
+        <member name="P:CN100.EnterprisePlatform.Configuration.WcfSection.Xmlns">
+            <summary>
+            Gets the XML namespace of this Configuration Section.
+            </summary>
+            <remarks>
+            This property makes sure that if the configuration file contains the XML namespace,
+            the parser doesn't throw an exception because it encounters the unknown "xmlns" attribute.
+            </remarks>
+        </member>
+        <member name="P:CN100.EnterprisePlatform.Configuration.WcfSection.Hosts">
+            <summary>
+            Gets or sets the Hosts.
+            </summary>
+        </member>
+        <member name="T:CN100.EnterprisePlatform.Configuration.ImageSection">
+            <summary>
+            The ImageSection Configuration Section.
+            </summary>
+        </member>
+        <member name="F:CN100.EnterprisePlatform.Configuration.ImageSection.ImageSectionSectionName">
+            <summary>
+            The XML name of the ImageSection Configuration Section.
+            </summary>
+        </member>
+        <member name="F:CN100.EnterprisePlatform.Configuration.ImageSection.XmlnsPropertyName">
+            <summary>
+            The XML name of the <see cref="P:CN100.EnterprisePlatform.Configuration.ImageSection.Xmlns"/> property.
+            </summary>
+        </member>
+        <member name="F:CN100.EnterprisePlatform.Configuration.ImageSection.UrlsPropertyName">
+            <summary>
+            The XML name of the <see cref="P:CN100.EnterprisePlatform.Configuration.ImageSection.Urls"/> property.
+            </summary>
+        </member>
+        <member name="M:CN100.EnterprisePlatform.Configuration.ImageSection.IsReadOnly">
+            <summary>
+            Gets a value indicating whether the element is read-only.
+            </summary>
+        </member>
+        <member name="P:CN100.EnterprisePlatform.Configuration.ImageSection.Instance">
+            <summary>
+            Gets the ImageSection instance.
+            </summary>
+        </member>
+        <member name="P:CN100.EnterprisePlatform.Configuration.ImageSection.Xmlns">
+            <summary>
+            Gets the XML namespace of this Configuration Section.
+            </summary>
+            <remarks>
+            This property makes sure that if the configuration file contains the XML namespace,
+            the parser doesn't throw an exception because it encounters the unknown "xmlns" attribute.
+            </remarks>
+        </member>
+        <member name="P:CN100.EnterprisePlatform.Configuration.ImageSection.Urls">
+            <summary>
+            Gets or sets the Urls.
+            </summary>
+        </member>
+        <member name="T:CN100.EnterprisePlatform.Configuration.MqSection">
+            <summary>
+            The MqSection Configuration Section.
+            </summary>
+        </member>
+        <member name="F:CN100.EnterprisePlatform.Configuration.MqSection.MqSectionSectionName">
+            <summary>
+            The XML name of the MqSection Configuration Section.
+            </summary>
+        </member>
+        <member name="F:CN100.EnterprisePlatform.Configuration.MqSection.XmlnsPropertyName">
+            <summary>
+            The XML name of the <see cref="P:CN100.EnterprisePlatform.Configuration.MqSection.Xmlns"/> property.
+            </summary>
+        </member>
+        <member name="F:CN100.EnterprisePlatform.Configuration.MqSection.HostsPropertyName">
+            <summary>
+            The XML name of the <see cref="P:CN100.EnterprisePlatform.Configuration.MqSection.Hosts"/> property.
+            </summary>
+        </member>
+        <member name="M:CN100.EnterprisePlatform.Configuration.MqSection.IsReadOnly">
+            <summary>
+            Gets a value indicating whether the element is read-only.
+            </summary>
+        </member>
+        <member name="P:CN100.EnterprisePlatform.Configuration.MqSection.Instance">
+            <summary>
+            Gets the MqSection instance.
+            </summary>
+        </member>
+        <member name="P:CN100.EnterprisePlatform.Configuration.MqSection.Xmlns">
+            <summary>
+            Gets the XML namespace of this Configuration Section.
+            </summary>
+            <remarks>
+            This property makes sure that if the configuration file contains the XML namespace,
+            the parser doesn't throw an exception because it encounters the unknown "xmlns" attribute.
+            </remarks>
+        </member>
+        <member name="P:CN100.EnterprisePlatform.Configuration.MqSection.Hosts">
+            <summary>
+            Gets or sets the Hosts.
+            </summary>
+        </member>
+        <member name="T:CN100.EnterprisePlatform.Configuration.WcfElementCollection">
+            <summary>
+            A collection of WcfElement instances.
+            </summary>
+        </member>
+        <member name="F:CN100.EnterprisePlatform.Configuration.WcfElementCollection.WcfElementPropertyName">
+            <summary>
+            The XML name of the individual <see cref="T:CN100.EnterprisePlatform.Configuration.WcfElement"/> instances in this collection.
+            </summary>
+        </member>
+        <member name="M:CN100.EnterprisePlatform.Configuration.WcfElementCollection.IsElementName(System.String)">
+            <summary>
+            Indicates whether the specified <see cref="T:System.Configuration.ConfigurationElement"/> exists in the <see cref="T:System.Configuration.ConfigurationElementCollection"/>.
+            </summary>
+            <param name="elementName">The name of the element to verify.</param>
+            <returns>
+            <see langword="true"/> if the element exists in the collection; otherwise, <see langword="false"/>.
+            </returns>
+        </member>
+        <member name="M:CN100.EnterprisePlatform.Configuration.WcfElementCollection.GetElementKey(System.Configuration.ConfigurationElement)">
+            <summary>
+            Gets the element key for the specified configuration element.
+            </summary>
+            <param name="element">The <see cref="T:System.Configuration.ConfigurationElement"/> to return the key for.</param>
+            <returns>
+            An <see cref="T:System.Object"/> that acts as the key for the specified <see cref="T:System.Configuration.ConfigurationElement"/>.
+            </returns>
+        </member>
+        <member name="M:CN100.EnterprisePlatform.Configuration.WcfElementCollection.CreateNewElement">
+            <summary>
+            Creates a new <see cref="T:CN100.EnterprisePlatform.Configuration.WcfElement"/>.
+            </summary>
+            <returns>
+            A new <see cref="T:CN100.EnterprisePlatform.Configuration.WcfElement"/>.
+            </returns>
+        </member>
+        <member name="M:CN100.EnterprisePlatform.Configuration.WcfElementCollection.Add(CN100.EnterprisePlatform.Configuration.WcfElement)">
+            <summary>
+            Adds the specified <see cref="T:CN100.EnterprisePlatform.Configuration.WcfElement"/> to the <see cref="T:System.Configuration.ConfigurationElementCollection"/>.
+            </summary>
+            <param name="host">The <see cref="T:CN100.EnterprisePlatform.Configuration.WcfElement"/> to add.</param>
+        </member>
+        <member name="M:CN100.EnterprisePlatform.Configuration.WcfElementCollection.Remove(CN100.EnterprisePlatform.Configuration.WcfElement)">
+            <summary>
+            Removes the specified <see cref="T:CN100.EnterprisePlatform.Configuration.WcfElement"/> from the <see cref="T:System.Configuration.ConfigurationElementCollection"/>.
+            </summary>
+            <param name="host">The <see cref="T:CN100.EnterprisePlatform.Configuration.WcfElement"/> to remove.</param>
+        </member>
+        <member name="M:CN100.EnterprisePlatform.Configuration.WcfElementCollection.GetItemAt(System.Int32)">
+            <summary>
+            Gets the <see cref="T:CN100.EnterprisePlatform.Configuration.WcfElement"/> at the specified index.
+            </summary>
+            <param name="index">The index of the <see cref="T:CN100.EnterprisePlatform.Configuration.WcfElement"/> to retrieve.</param>
+        </member>
+        <member name="M:CN100.EnterprisePlatform.Configuration.WcfElementCollection.GetItemByKey(System.String)">
+            <summary>
+            Gets the <see cref="T:CN100.EnterprisePlatform.Configuration.WcfElement"/> with the specified key.
+            </summary>
+            <param name="name">The key of the <see cref="T:CN100.EnterprisePlatform.Configuration.WcfElement"/> to retrieve.</param>
+        </member>
+        <member name="M:CN100.EnterprisePlatform.Configuration.WcfElementCollection.IsReadOnly">
+            <summary>
+            Gets a value indicating whether the element is read-only.
+            </summary>
+        </member>
+        <member name="P:CN100.EnterprisePlatform.Configuration.WcfElementCollection.CollectionType">
+            <summary>
+            Gets the type of the <see cref="T:System.Configuration.ConfigurationElementCollection"/>.
+            </summary>
+            <returns>The <see cref="T:System.Configuration.ConfigurationElementCollectionType"/> of this collection.</returns>
+        </member>
+        <member name="P:CN100.EnterprisePlatform.Configuration.WcfElementCollection.ElementName">
+            <summary>
+            Gets the name used to identify this collection of elements
+            </summary>
+        </member>
+        <member name="P:CN100.EnterprisePlatform.Configuration.WcfElementCollection.Item(System.Int32)">
+            <summary>
+            Gets the <see cref="T:CN100.EnterprisePlatform.Configuration.WcfElement"/> at the specified index.
+            </summary>
+            <param name="index">The index of the <see cref="T:CN100.EnterprisePlatform.Configuration.WcfElement"/> to retrieve.</param>
+        </member>
+        <member name="P:CN100.EnterprisePlatform.Configuration.WcfElementCollection.Item(System.Object)">
+            <summary>
+            Gets the <see cref="T:CN100.EnterprisePlatform.Configuration.WcfElement"/> with the specified key.
+            </summary>
+            <param name="name">The key of the <see cref="T:CN100.EnterprisePlatform.Configuration.WcfElement"/> to retrieve.</param>
+        </member>
+        <member name="T:CN100.EnterprisePlatform.Configuration.WcfElement">
+            <summary>
+            The WcfElement Configuration Element.
+            </summary>
+        </member>
+        <member name="F:CN100.EnterprisePlatform.Configuration.WcfElement.IpPropertyName">
+            <summary>
+            The XML name of the <see cref="P:CN100.EnterprisePlatform.Configuration.WcfElement.Ip"/> property.
+            </summary>
+        </member>
+        <member name="F:CN100.EnterprisePlatform.Configuration.WcfElement.PortPropertyName">
+            <summary>
+            The XML name of the <see cref="P:CN100.EnterprisePlatform.Configuration.WcfElement.Port"/> property.
+            </summary>
+        </member>
+        <member name="F:CN100.EnterprisePlatform.Configuration.WcfElement.IsDefaultPropertyName">
+            <summary>
+            The XML name of the <see cref="P:CN100.EnterprisePlatform.Configuration.WcfElement.IsDefault"/> property.
+            </summary>
+        </member>
+        <member name="F:CN100.EnterprisePlatform.Configuration.WcfElement.NamePropertyName">
+            <summary>
+            The XML name of the <see cref="P:CN100.EnterprisePlatform.Configuration.WcfElement.Name"/> property.
+            </summary>
+        </member>
+        <member name="M:CN100.EnterprisePlatform.Configuration.WcfElement.IsReadOnly">
+            <summary>
+            Gets a value indicating whether the element is read-only.
+            </summary>
+        </member>
+        <member name="P:CN100.EnterprisePlatform.Configuration.WcfElement.Ip">
+            <summary>
+            Gets or sets the Ip.
+            </summary>
+        </member>
+        <member name="P:CN100.EnterprisePlatform.Configuration.WcfElement.Port">
+            <summary>
+            Gets or sets the Port.
+            </summary>
+        </member>
+        <member name="P:CN100.EnterprisePlatform.Configuration.WcfElement.IsDefault">
+            <summary>
+            Gets or sets the IsDefault.
+            </summary>
+        </member>
+        <member name="P:CN100.EnterprisePlatform.Configuration.WcfElement.Name">
+            <summary>
+            Gets or sets the Name.
+            </summary>
+        </member>
+        <member name="T:CN100.EnterprisePlatform.Configuration.ImageElementCollection">
+            <summary>
+            A collection of ImageElement instances.
+            </summary>
+        </member>
+        <member name="F:CN100.EnterprisePlatform.Configuration.ImageElementCollection.ImageElementPropertyName">
+            <summary>
+            The XML name of the individual <see cref="T:CN100.EnterprisePlatform.Configuration.ImageElement"/> instances in this collection.
+            </summary>
+        </member>
+        <member name="M:CN100.EnterprisePlatform.Configuration.ImageElementCollection.IsElementName(System.String)">
+            <summary>
+            Indicates whether the specified <see cref="T:System.Configuration.ConfigurationElement"/> exists in the <see cref="T:System.Configuration.ConfigurationElementCollection"/>.
+            </summary>
+            <param name="elementName">The name of the element to verify.</param>
+            <returns>
+            <see langword="true"/> if the element exists in the collection; otherwise, <see langword="false"/>.
+            </returns>
+        </member>
+        <member name="M:CN100.EnterprisePlatform.Configuration.ImageElementCollection.GetElementKey(System.Configuration.ConfigurationElement)">
+            <summary>
+            Gets the element key for the specified configuration element.
+            </summary>
+            <param name="element">The <see cref="T:System.Configuration.ConfigurationElement"/> to return the key for.</param>
+            <returns>
+            An <see cref="T:System.Object"/> that acts as the key for the specified <see cref="T:System.Configuration.ConfigurationElement"/>.
+            </returns>
+        </member>
+        <member name="M:CN100.EnterprisePlatform.Configuration.ImageElementCollection.CreateNewElement">
+            <summary>
+            Creates a new <see cref="T:CN100.EnterprisePlatform.Configuration.ImageElement"/>.
+            </summary>
+            <returns>
+            A new <see cref="T:CN100.EnterprisePlatform.Configuration.ImageElement"/>.
+            </returns>
+        </member>
+        <member name="M:CN100.EnterprisePlatform.Configuration.ImageElementCollection.Add(CN100.EnterprisePlatform.Configuration.ImageElement)">
+            <summary>
+            Adds the specified <see cref="T:CN100.EnterprisePlatform.Configuration.ImageElement"/> to the <see cref="T:System.Configuration.ConfigurationElementCollection"/>.
+            </summary>
+            <param name="url">The <see cref="T:CN100.EnterprisePlatform.Configuration.ImageElement"/> to add.</param>
+        </member>
+        <member name="M:CN100.EnterprisePlatform.Configuration.ImageElementCollection.Remove(CN100.EnterprisePlatform.Configuration.ImageElement)">
+            <summary>
+            Removes the specified <see cref="T:CN100.EnterprisePlatform.Configuration.ImageElement"/> from the <see cref="T:System.Configuration.ConfigurationElementCollection"/>.
+            </summary>
+            <param name="url">The <see cref="T:CN100.EnterprisePlatform.Configuration.ImageElement"/> to remove.</param>
+        </member>
+        <member name="M:CN100.EnterprisePlatform.Configuration.ImageElementCollection.GetItemAt(System.Int32)">
+            <summary>
+            Gets the <see cref="T:CN100.EnterprisePlatform.Configuration.ImageElement"/> at the specified index.
+            </summary>
+            <param name="index">The index of the <see cref="T:CN100.EnterprisePlatform.Configuration.ImageElement"/> to retrieve.</param>
+        </member>
+        <member name="M:CN100.EnterprisePlatform.Configuration.ImageElementCollection.GetItemByKey(System.String)">
+            <summary>
+            Gets the <see cref="T:CN100.EnterprisePlatform.Configuration.ImageElement"/> with the specified key.
+            </summary>
+            <param name="name">The key of the <see cref="T:CN100.EnterprisePlatform.Configuration.ImageElement"/> to retrieve.</param>
+        </member>
+        <member name="M:CN100.EnterprisePlatform.Configuration.ImageElementCollection.IsReadOnly">
+            <summary>
+            Gets a value indicating whether the element is read-only.
+            </summary>
+        </member>
+        <member name="P:CN100.EnterprisePlatform.Configuration.ImageElementCollection.CollectionType">
+            <summary>
+            Gets the type of the <see cref="T:System.Configuration.ConfigurationElementCollection"/>.
+            </summary>
+            <returns>The <see cref="T:System.Configuration.ConfigurationElementCollectionType"/> of this collection.</returns>
+        </member>
+        <member name="P:CN100.EnterprisePlatform.Configuration.ImageElementCollection.ElementName">
+            <summary>
+            Gets the name used to identify this collection of elements
+            </summary>
+        </member>
+        <member name="P:CN100.EnterprisePlatform.Configuration.ImageElementCollection.Item(System.Int32)">
+            <summary>
+            Gets the <see cref="T:CN100.EnterprisePlatform.Configuration.ImageElement"/> at the specified index.
+            </summary>
+            <param name="index">The index of the <see cref="T:CN100.EnterprisePlatform.Configuration.ImageElement"/> to retrieve.</param>
+        </member>
+        <member name="P:CN100.EnterprisePlatform.Configuration.ImageElementCollection.Item(System.Object)">
+            <summary>
+            Gets the <see cref="T:CN100.EnterprisePlatform.Configuration.ImageElement"/> with the specified key.
+            </summary>
+            <param name="name">The key of the <see cref="T:CN100.EnterprisePlatform.Configuration.ImageElement"/> to retrieve.</param>
+        </member>
+        <member name="T:CN100.EnterprisePlatform.Configuration.ImageElement">
+            <summary>
+            The ImageElement Configuration Element.
+            </summary>
+        </member>
+        <member name="F:CN100.EnterprisePlatform.Configuration.ImageElement.NamePropertyName">
+            <summary>
+            The XML name of the <see cref="P:CN100.EnterprisePlatform.Configuration.ImageElement.Name"/> property.
+            </summary>
+        </member>
+        <member name="F:CN100.EnterprisePlatform.Configuration.ImageElement.UrlPropertyName">
+            <summary>
+            The XML name of the <see cref="P:CN100.EnterprisePlatform.Configuration.ImageElement.Url"/> property.
+            </summary>
+        </member>
+        <member name="M:CN100.EnterprisePlatform.Configuration.ImageElement.IsReadOnly">
+            <summary>
+            Gets a value indicating whether the element is read-only.
+            </summary>
+        </member>
+        <member name="P:CN100.EnterprisePlatform.Configuration.ImageElement.Name">
+            <summary>
+            Gets or sets the Name.
+            </summary>
+        </member>
+        <member name="P:CN100.EnterprisePlatform.Configuration.ImageElement.Url">
+            <summary>
+            Gets or sets the Url.
+            </summary>
+        </member>
+        <member name="T:CN100.EnterprisePlatform.Configuration.MqElementCollection">
+            <summary>
+            A collection of MqElement instances.
+            </summary>
+        </member>
+        <member name="F:CN100.EnterprisePlatform.Configuration.MqElementCollection.MqElementPropertyName">
+            <summary>
+            The XML name of the individual <see cref="T:CN100.EnterprisePlatform.Configuration.MqElement"/> instances in this collection.
+            </summary>
+        </member>
+        <member name="M:CN100.EnterprisePlatform.Configuration.MqElementCollection.IsElementName(System.String)">
+            <summary>
+            Indicates whether the specified <see cref="T:System.Configuration.ConfigurationElement"/> exists in the <see cref="T:System.Configuration.ConfigurationElementCollection"/>.
+            </summary>
+            <param name="elementName">The name of the element to verify.</param>
+            <returns>
+            <see langword="true"/> if the element exists in the collection; otherwise, <see langword="false"/>.
+            </returns>
+        </member>
+        <member name="M:CN100.EnterprisePlatform.Configuration.MqElementCollection.GetElementKey(System.Configuration.ConfigurationElement)">
+            <summary>
+            Gets the element key for the specified configuration element.
+            </summary>
+            <param name="element">The <see cref="T:System.Configuration.ConfigurationElement"/> to return the key for.</param>
+            <returns>
+            An <see cref="T:System.Object"/> that acts as the key for the specified <see cref="T:System.Configuration.ConfigurationElement"/>.
+            </returns>
+        </member>
+        <member name="M:CN100.EnterprisePlatform.Configuration.MqElementCollection.CreateNewElement">
+            <summary>
+            Creates a new <see cref="T:CN100.EnterprisePlatform.Configuration.MqElement"/>.
+            </summary>
+            <returns>
+            A new <see cref="T:CN100.EnterprisePlatform.Configuration.MqElement"/>.
+            </returns>
+        </member>
+        <member name="M:CN100.EnterprisePlatform.Configuration.MqElementCollection.Add(CN100.EnterprisePlatform.Configuration.MqElement)">
+            <summary>
+            Adds the specified <see cref="T:CN100.EnterprisePlatform.Configuration.MqElement"/> to the <see cref="T:System.Configuration.ConfigurationElementCollection"/>.
+            </summary>
+            <param name="host">The <see cref="T:CN100.EnterprisePlatform.Configuration.MqElement"/> to add.</param>
+        </member>
+        <member name="M:CN100.EnterprisePlatform.Configuration.MqElementCollection.Remove(CN100.EnterprisePlatform.Configuration.MqElement)">
+            <summary>
+            Removes the specified <see cref="T:CN100.EnterprisePlatform.Configuration.MqElement"/> from the <see cref="T:System.Configuration.ConfigurationElementCollection"/>.
+            </summary>
+            <param name="host">The <see cref="T:CN100.EnterprisePlatform.Configuration.MqElement"/> to remove.</param>
+        </member>
+        <member name="M:CN100.EnterprisePlatform.Configuration.MqElementCollection.GetItemAt(System.Int32)">
+            <summary>
+            Gets the <see cref="T:CN100.EnterprisePlatform.Configuration.MqElement"/> at the specified index.
+            </summary>
+            <param name="index">The index of the <see cref="T:CN100.EnterprisePlatform.Configuration.MqElement"/> to retrieve.</param>
+        </member>
+        <member name="M:CN100.EnterprisePlatform.Configuration.MqElementCollection.GetItemByKey(System.String)">
+            <summary>
+            Gets the <see cref="T:CN100.EnterprisePlatform.Configuration.MqElement"/> with the specified key.
+            </summary>
+            <param name="serviceName">The key of the <see cref="T:CN100.EnterprisePlatform.Configuration.MqElement"/> to retrieve.</param>
+        </member>
+        <member name="M:CN100.EnterprisePlatform.Configuration.MqElementCollection.IsReadOnly">
+            <summary>
+            Gets a value indicating whether the element is read-only.
+            </summary>
+        </member>
+        <member name="P:CN100.EnterprisePlatform.Configuration.MqElementCollection.CollectionType">
+            <summary>
+            Gets the type of the <see cref="T:System.Configuration.ConfigurationElementCollection"/>.
+            </summary>
+            <returns>The <see cref="T:System.Configuration.ConfigurationElementCollectionType"/> of this collection.</returns>
+        </member>
+        <member name="P:CN100.EnterprisePlatform.Configuration.MqElementCollection.ElementName">
+            <summary>
+            Gets the name used to identify this collection of elements
+            </summary>
+        </member>
+        <member name="P:CN100.EnterprisePlatform.Configuration.MqElementCollection.Item(System.Int32)">
+            <summary>
+            Gets the <see cref="T:CN100.EnterprisePlatform.Configuration.MqElement"/> at the specified index.
+            </summary>
+            <param name="index">The index of the <see cref="T:CN100.EnterprisePlatform.Configuration.MqElement"/> to retrieve.</param>
+        </member>
+        <member name="P:CN100.EnterprisePlatform.Configuration.MqElementCollection.Item(System.Object)">
+            <summary>
+            Gets the <see cref="T:CN100.EnterprisePlatform.Configuration.MqElement"/> with the specified key.
+            </summary>
+            <param name="serviceName">The key of the <see cref="T:CN100.EnterprisePlatform.Configuration.MqElement"/> to retrieve.</param>
+        </member>
+        <member name="T:CN100.EnterprisePlatform.Configuration.MqElement">
+            <summary>
+            The MqElement Configuration Element.
+            </summary>
+        </member>
+        <member name="F:CN100.EnterprisePlatform.Configuration.MqElement.ServiceNamePropertyName">
+            <summary>
+            The XML name of the <see cref="P:CN100.EnterprisePlatform.Configuration.MqElement.ServiceName"/> property.
+            </summary>
+        </member>
+        <member name="F:CN100.EnterprisePlatform.Configuration.MqElement.IpPropertyName">
+            <summary>
+            The XML name of the <see cref="P:CN100.EnterprisePlatform.Configuration.MqElement.Ip"/> property.
+            </summary>
+        </member>
+        <member name="F:CN100.EnterprisePlatform.Configuration.MqElement.PortPropertyName">
+            <summary>
+            The XML name of the <see cref="P:CN100.EnterprisePlatform.Configuration.MqElement.Port"/> property.
+            </summary>
+        </member>
+        <member name="M:CN100.EnterprisePlatform.Configuration.MqElement.IsReadOnly">
+            <summary>
+            Gets a value indicating whether the element is read-only.
+            </summary>
+        </member>
+        <member name="P:CN100.EnterprisePlatform.Configuration.MqElement.ServiceName">
+            <summary>
+            Gets or sets the ServiceName.
+            </summary>
+        </member>
+        <member name="P:CN100.EnterprisePlatform.Configuration.MqElement.Ip">
+            <summary>
+            Gets or sets the Ip.
+            </summary>
+        </member>
+        <member name="P:CN100.EnterprisePlatform.Configuration.MqElement.Port">
+            <summary>
+            Gets or sets the Port.
+            </summary>
+        </member>
+        <member name="T:CN100.EnterprisePlatform.Configuration.SearchSection">
+            <summary>
+            The SearchSection Configuration Section.
+            </summary>
+        </member>
+        <member name="F:CN100.EnterprisePlatform.Configuration.SearchSection.SearchSectionSectionName">
+            <summary>
+            The XML name of the SearchSection Configuration Section.
+            </summary>
+        </member>
+        <member name="F:CN100.EnterprisePlatform.Configuration.SearchSection.XmlnsPropertyName">
+            <summary>
+            The XML name of the <see cref="P:CN100.EnterprisePlatform.Configuration.SearchSection.Xmlns"/> property.
+            </summary>
+        </member>
+        <member name="F:CN100.EnterprisePlatform.Configuration.SearchSection.SearchPropertyName">
+            <summary>
+            The XML name of the <see cref="P:CN100.EnterprisePlatform.Configuration.SearchSection.Search"/> property.
+            </summary>
+        </member>
+        <member name="M:CN100.EnterprisePlatform.Configuration.SearchSection.IsReadOnly">
+            <summary>
+            Gets a value indicating whether the element is read-only.
+            </summary>
+        </member>
+        <member name="P:CN100.EnterprisePlatform.Configuration.SearchSection.Instance">
+            <summary>
+            Gets the SearchSection instance.
+            </summary>
+        </member>
+        <member name="P:CN100.EnterprisePlatform.Configuration.SearchSection.Xmlns">
+            <summary>
+            Gets the XML namespace of this Configuration Section.
+            </summary>
+            <remarks>
+            This property makes sure that if the configuration file contains the XML namespace,
+            the parser doesn't throw an exception because it encounters the unknown "xmlns" attribute.
+            </remarks>
+        </member>
+        <member name="P:CN100.EnterprisePlatform.Configuration.SearchSection.Search">
+            <summary>
+            Gets or sets the Search.
+            </summary>
+        </member>
+        <member name="T:CN100.EnterprisePlatform.Configuration.SearchElementCollection">
+            <summary>
+            A collection of SearchElement instances.
+            </summary>
+        </member>
+        <member name="F:CN100.EnterprisePlatform.Configuration.SearchElementCollection.SearchElementPropertyName">
+            <summary>
+            The XML name of the individual <see cref="T:CN100.EnterprisePlatform.Configuration.SearchElement"/> instances in this collection.
+            </summary>
+        </member>
+        <member name="M:CN100.EnterprisePlatform.Configuration.SearchElementCollection.IsElementName(System.String)">
+            <summary>
+            Indicates whether the specified <see cref="T:System.Configuration.ConfigurationElement"/> exists in the <see cref="T:System.Configuration.ConfigurationElementCollection"/>.
+            </summary>
+            <param name="elementName">The name of the element to verify.</param>
+            <returns>
+            <see langword="true"/> if the element exists in the collection; otherwise, <see langword="false"/>.
+            </returns>
+        </member>
+        <member name="M:CN100.EnterprisePlatform.Configuration.SearchElementCollection.GetElementKey(System.Configuration.ConfigurationElement)">
+            <summary>
+            Gets the element key for the specified configuration element.
+            </summary>
+            <param name="element">The <see cref="T:System.Configuration.ConfigurationElement"/> to return the key for.</param>
+            <returns>
+            An <see cref="T:System.Object"/> that acts as the key for the specified <see cref="T:System.Configuration.ConfigurationElement"/>.
+            </returns>
+        </member>
+        <member name="M:CN100.EnterprisePlatform.Configuration.SearchElementCollection.CreateNewElement">
+            <summary>
+            Creates a new <see cref="T:CN100.EnterprisePlatform.Configuration.SearchElement"/>.
+            </summary>
+            <returns>
+            A new <see cref="T:CN100.EnterprisePlatform.Configuration.SearchElement"/>.
+            </returns>
+        </member>
+        <member name="M:CN100.EnterprisePlatform.Configuration.SearchElementCollection.Add(CN100.EnterprisePlatform.Configuration.SearchElement)">
+            <summary>
+            Adds the specified <see cref="T:CN100.EnterprisePlatform.Configuration.SearchElement"/> to the <see cref="T:System.Configuration.ConfigurationElementCollection"/>.
+            </summary>
+            <param name="searchElement">The <see cref="T:CN100.EnterprisePlatform.Configuration.SearchElement"/> to add.</param>
+        </member>
+        <member name="M:CN100.EnterprisePlatform.Configuration.SearchElementCollection.Remove(CN100.EnterprisePlatform.Configuration.SearchElement)">
+            <summary>
+            Removes the specified <see cref="T:CN100.EnterprisePlatform.Configuration.SearchElement"/> from the <see cref="T:System.Configuration.ConfigurationElementCollection"/>.
+            </summary>
+            <param name="searchElement">The <see cref="T:CN100.EnterprisePlatform.Configuration.SearchElement"/> to remove.</param>
+        </member>
+        <member name="M:CN100.EnterprisePlatform.Configuration.SearchElementCollection.GetItemAt(System.Int32)">
+            <summary>
+            Gets the <see cref="T:CN100.EnterprisePlatform.Configuration.SearchElement"/> at the specified index.
+            </summary>
+            <param name="index">The index of the <see cref="T:CN100.EnterprisePlatform.Configuration.SearchElement"/> to retrieve.</param>
+        </member>
+        <member name="M:CN100.EnterprisePlatform.Configuration.SearchElementCollection.GetItemByKey(System.String)">
+            <summary>
+            Gets the <see cref="T:CN100.EnterprisePlatform.Configuration.SearchElement"/> with the specified key.
+            </summary>
+            <param name="key">The key of the <see cref="T:CN100.EnterprisePlatform.Configuration.SearchElement"/> to retrieve.</param>
+        </member>
+        <member name="M:CN100.EnterprisePlatform.Configuration.SearchElementCollection.IsReadOnly">
+            <summary>
+            Gets a value indicating whether the element is read-only.
+            </summary>
+        </member>
+        <member name="P:CN100.EnterprisePlatform.Configuration.SearchElementCollection.CollectionType">
+            <summary>
+            Gets the type of the <see cref="T:System.Configuration.ConfigurationElementCollection"/>.
+            </summary>
+            <returns>The <see cref="T:System.Configuration.ConfigurationElementCollectionType"/> of this collection.</returns>
+        </member>
+        <member name="P:CN100.EnterprisePlatform.Configuration.SearchElementCollection.ElementName">
+            <summary>
+            Gets the name used to identify this collection of elements
+            </summary>
+        </member>
+        <member name="P:CN100.EnterprisePlatform.Configuration.SearchElementCollection.Item(System.Int32)">
+            <summary>
+            Gets the <see cref="T:CN100.EnterprisePlatform.Configuration.SearchElement"/> at the specified index.
+            </summary>
+            <param name="index">The index of the <see cref="T:CN100.EnterprisePlatform.Configuration.SearchElement"/> to retrieve.</param>
+        </member>
+        <member name="P:CN100.EnterprisePlatform.Configuration.SearchElementCollection.Item(System.Object)">
+            <summary>
+            Gets the <see cref="T:CN100.EnterprisePlatform.Configuration.SearchElement"/> with the specified key.
+            </summary>
+            <param name="key">The key of the <see cref="T:CN100.EnterprisePlatform.Configuration.SearchElement"/> to retrieve.</param>
+        </member>
+        <member name="T:CN100.EnterprisePlatform.Configuration.SearchElement">
+            <summary>
+            The SearchElement Configuration Element.
+            </summary>
+        </member>
+        <member name="F:CN100.EnterprisePlatform.Configuration.SearchElement.KeyPropertyName">
+            <summary>
+            The XML name of the <see cref="P:CN100.EnterprisePlatform.Configuration.SearchElement.Key"/> property.
+            </summary>
+        </member>
+        <member name="F:CN100.EnterprisePlatform.Configuration.SearchElement.ValuePropertyName">
+            <summary>
+            The XML name of the <see cref="P:CN100.EnterprisePlatform.Configuration.SearchElement.Value"/> property.
+            </summary>
+        </member>
+        <member name="M:CN100.EnterprisePlatform.Configuration.SearchElement.IsReadOnly">
+            <summary>
+            Gets a value indicating whether the element is read-only.
+            </summary>
+        </member>
+        <member name="P:CN100.EnterprisePlatform.Configuration.SearchElement.Key">
+            <summary>
+            Gets or sets the Key.
+            </summary>
+        </member>
+        <member name="P:CN100.EnterprisePlatform.Configuration.SearchElement.Value">
+            <summary>
+            Gets or sets the Value.
+            </summary>
+        </member>
+        <member name="T:CN100.EnterprisePlatform.Configuration.AdSection">
+            <summary>
+            The AdSection Configuration Section.
+            </summary>
+        </member>
+        <member name="F:CN100.EnterprisePlatform.Configuration.AdSection.AdSectionSectionName">
+            <summary>
+            The XML name of the AdSection Configuration Section.
+            </summary>
+        </member>
+        <member name="F:CN100.EnterprisePlatform.Configuration.AdSection.XmlnsPropertyName">
+            <summary>
+            The XML name of the <see cref="P:CN100.EnterprisePlatform.Configuration.AdSection.Xmlns"/> property.
+            </summary>
+        </member>
+        <member name="F:CN100.EnterprisePlatform.Configuration.AdSection.UrlsPropertyName">
+            <summary>
+            The XML name of the <see cref="P:CN100.EnterprisePlatform.Configuration.AdSection.Urls"/> property.
+            </summary>
+        </member>
+        <member name="M:CN100.EnterprisePlatform.Configuration.AdSection.IsReadOnly">
+            <summary>
+            Gets a value indicating whether the element is read-only.
+            </summary>
+        </member>
+        <member name="P:CN100.EnterprisePlatform.Configuration.AdSection.Instance">
+            <summary>
+            Gets the AdSection instance.
+            </summary>
+        </member>
+        <member name="P:CN100.EnterprisePlatform.Configuration.AdSection.Xmlns">
+            <summary>
+            Gets the XML namespace of this Configuration Section.
+            </summary>
+            <remarks>
+            This property makes sure that if the configuration file contains the XML namespace,
+            the parser doesn't throw an exception because it encounters the unknown "xmlns" attribute.
+            </remarks>
+        </member>
+        <member name="P:CN100.EnterprisePlatform.Configuration.AdSection.Urls">
+            <summary>
+            Gets or sets the Urls.
+            </summary>
+        </member>
+        <member name="T:CN100.EnterprisePlatform.Configuration.AdElementCollection">
+            <summary>
+            A collection of AdElement instances.
+            </summary>
+        </member>
+        <member name="F:CN100.EnterprisePlatform.Configuration.AdElementCollection.AdElementPropertyName">
+            <summary>
+            The XML name of the individual <see cref="T:CN100.EnterprisePlatform.Configuration.AdElement"/> instances in this collection.
+            </summary>
+        </member>
+        <member name="M:CN100.EnterprisePlatform.Configuration.AdElementCollection.IsElementName(System.String)">
+            <summary>
+            Indicates whether the specified <see cref="T:System.Configuration.ConfigurationElement"/> exists in the <see cref="T:System.Configuration.ConfigurationElementCollection"/>.
+            </summary>
+            <param name="elementName">The name of the element to verify.</param>
+            <returns>
+            <see langword="true"/> if the element exists in the collection; otherwise, <see langword="false"/>.
+            </returns>
+        </member>
+        <member name="M:CN100.EnterprisePlatform.Configuration.AdElementCollection.GetElementKey(System.Configuration.ConfigurationElement)">
+            <summary>
+            Gets the element key for the specified configuration element.
+            </summary>
+            <param name="element">The <see cref="T:System.Configuration.ConfigurationElement"/> to return the key for.</param>
+            <returns>
+            An <see cref="T:System.Object"/> that acts as the key for the specified <see cref="T:System.Configuration.ConfigurationElement"/>.
+            </returns>
+        </member>
+        <member name="M:CN100.EnterprisePlatform.Configuration.AdElementCollection.CreateNewElement">
+            <summary>
+            Creates a new <see cref="T:CN100.EnterprisePlatform.Configuration.AdElement"/>.
+            </summary>
+            <returns>
+            A new <see cref="T:CN100.EnterprisePlatform.Configuration.AdElement"/>.
+            </returns>
+        </member>
+        <member name="M:CN100.EnterprisePlatform.Configuration.AdElementCollection.Add(CN100.EnterprisePlatform.Configuration.AdElement)">
+            <summary>
+            Adds the specified <see cref="T:CN100.EnterprisePlatform.Configuration.AdElement"/> to the <see cref="T:System.Configuration.ConfigurationElementCollection"/>.
+            </summary>
+            <param name="url">The <see cref="T:CN100.EnterprisePlatform.Configuration.AdElement"/> to add.</param>
+        </member>
+        <member name="M:CN100.EnterprisePlatform.Configuration.AdElementCollection.Remove(CN100.EnterprisePlatform.Configuration.AdElement)">
+            <summary>
+            Removes the specified <see cref="T:CN100.EnterprisePlatform.Configuration.AdElement"/> from the <see cref="T:System.Configuration.ConfigurationElementCollection"/>.
+            </summary>
+            <param name="url">The <see cref="T:CN100.EnterprisePlatform.Configuration.AdElement"/> to remove.</param>
+        </member>
+        <member name="M:CN100.EnterprisePlatform.Configuration.AdElementCollection.GetItemAt(System.Int32)">
+            <summary>
+            Gets the <see cref="T:CN100.EnterprisePlatform.Configuration.AdElement"/> at the specified index.
+            </summary>
+            <param name="index">The index of the <see cref="T:CN100.EnterprisePlatform.Configuration.AdElement"/> to retrieve.</param>
+        </member>
+        <member name="M:CN100.EnterprisePlatform.Configuration.AdElementCollection.GetItemByKey(System.String)">
+            <summary>
+            Gets the <see cref="T:CN100.EnterprisePlatform.Configuration.AdElement"/> with the specified key.
+            </summary>
+            <param name="name">The key of the <see cref="T:CN100.EnterprisePlatform.Configuration.AdElement"/> to retrieve.</param>
+        </member>
+        <member name="M:CN100.EnterprisePlatform.Configuration.AdElementCollection.IsReadOnly">
+            <summary>
+            Gets a value indicating whether the element is read-only.
+            </summary>
+        </member>
+        <member name="P:CN100.EnterprisePlatform.Configuration.AdElementCollection.CollectionType">
+            <summary>
+            Gets the type of the <see cref="T:System.Configuration.ConfigurationElementCollection"/>.
+            </summary>
+            <returns>The <see cref="T:System.Configuration.ConfigurationElementCollectionType"/> of this collection.</returns>
+        </member>
+        <member name="P:CN100.EnterprisePlatform.Configuration.AdElementCollection.ElementName">
+            <summary>
+            Gets the name used to identify this collection of elements
+            </summary>
+        </member>
+        <member name="P:CN100.EnterprisePlatform.Configuration.AdElementCollection.Item(System.Int32)">
+            <summary>
+            Gets the <see cref="T:CN100.EnterprisePlatform.Configuration.AdElement"/> at the specified index.
+            </summary>
+            <param name="index">The index of the <see cref="T:CN100.EnterprisePlatform.Configuration.AdElement"/> to retrieve.</param>
+        </member>
+        <member name="P:CN100.EnterprisePlatform.Configuration.AdElementCollection.Item(System.Object)">
+            <summary>
+            Gets the <see cref="T:CN100.EnterprisePlatform.Configuration.AdElement"/> with the specified key.
+            </summary>
+            <param name="name">The key of the <see cref="T:CN100.EnterprisePlatform.Configuration.AdElement"/> to retrieve.</param>
+        </member>
+        <member name="T:CN100.EnterprisePlatform.Configuration.AdElement">
+            <summary>
+            The AdElement Configuration Element.
+            </summary>
+        </member>
+        <member name="F:CN100.EnterprisePlatform.Configuration.AdElement.NamePropertyName">
+            <summary>
+            The XML name of the <see cref="P:CN100.EnterprisePlatform.Configuration.AdElement.Name"/> property.
+            </summary>
+        </member>
+        <member name="F:CN100.EnterprisePlatform.Configuration.AdElement.UrlPropertyName">
+            <summary>
+            The XML name of the <see cref="P:CN100.EnterprisePlatform.Configuration.AdElement.Url"/> property.
+            </summary>
+        </member>
+        <member name="M:CN100.EnterprisePlatform.Configuration.AdElement.IsReadOnly">
+            <summary>
+            Gets a value indicating whether the element is read-only.
+            </summary>
+        </member>
+        <member name="P:CN100.EnterprisePlatform.Configuration.AdElement.Name">
+            <summary>
+            Gets or sets the Name.
+            </summary>
+        </member>
+        <member name="P:CN100.EnterprisePlatform.Configuration.AdElement.Url">
+            <summary>
+            Gets or sets the Url.
+            </summary>
+        </member>
+        <member name="T:CN100.EnterprisePlatform.Configuration.StyleSection">
+            <summary>
+            The StyleSection Configuration Section.
+            </summary>
+        </member>
+        <member name="F:CN100.EnterprisePlatform.Configuration.StyleSection.StyleSectionSectionName">
+            <summary>
+            The XML name of the StyleSection Configuration Section.
+            </summary>
+        </member>
+        <member name="F:CN100.EnterprisePlatform.Configuration.StyleSection.XmlnsPropertyName">
+            <summary>
+            The XML name of the <see cref="P:CN100.EnterprisePlatform.Configuration.StyleSection.Xmlns"/> property.
+            </summary>
+        </member>
+        <member name="F:CN100.EnterprisePlatform.Configuration.StyleSection.UrlsPropertyName">
+            <summary>
+            The XML name of the <see cref="P:CN100.EnterprisePlatform.Configuration.StyleSection.Urls"/> property.
+            </summary>
+        </member>
+        <member name="M:CN100.EnterprisePlatform.Configuration.StyleSection.IsReadOnly">
+            <summary>
+            Gets a value indicating whether the element is read-only.
+            </summary>
+        </member>
+        <member name="P:CN100.EnterprisePlatform.Configuration.StyleSection.Instance">
+            <summary>
+            Gets the StyleSection instance.
+            </summary>
+        </member>
+        <member name="P:CN100.EnterprisePlatform.Configuration.StyleSection.Xmlns">
+            <summary>
+            Gets the XML namespace of this Configuration Section.
+            </summary>
+            <remarks>
+            This property makes sure that if the configuration file contains the XML namespace,
+            the parser doesn't throw an exception because it encounters the unknown "xmlns" attribute.
+            </remarks>
+        </member>
+        <member name="P:CN100.EnterprisePlatform.Configuration.StyleSection.Urls">
+            <summary>
+            Gets or sets the Urls.
+            </summary>
+        </member>
+        <member name="T:CN100.EnterprisePlatform.Configuration.StyleElementCollection">
+            <summary>
+            A collection of StyleElement instances.
+            </summary>
+        </member>
+        <member name="F:CN100.EnterprisePlatform.Configuration.StyleElementCollection.StyleElementPropertyName">
+            <summary>
+            The XML name of the individual <see cref="T:CN100.EnterprisePlatform.Configuration.StyleElement"/> instances in this collection.
+            </summary>
+        </member>
+        <member name="M:CN100.EnterprisePlatform.Configuration.StyleElementCollection.IsElementName(System.String)">
+            <summary>
+            Indicates whether the specified <see cref="T:System.Configuration.ConfigurationElement"/> exists in the <see cref="T:System.Configuration.ConfigurationElementCollection"/>.
+            </summary>
+            <param name="elementName">The name of the element to verify.</param>
+            <returns>
+            <see langword="true"/> if the element exists in the collection; otherwise, <see langword="false"/>.
+            </returns>
+        </member>
+        <member name="M:CN100.EnterprisePlatform.Configuration.StyleElementCollection.GetElementKey(System.Configuration.ConfigurationElement)">
+            <summary>
+            Gets the element key for the specified configuration element.
+            </summary>
+            <param name="element">The <see cref="T:System.Configuration.ConfigurationElement"/> to return the key for.</param>
+            <returns>
+            An <see cref="T:System.Object"/> that acts as the key for the specified <see cref="T:System.Configuration.ConfigurationElement"/>.
+            </returns>
+        </member>
+        <member name="M:CN100.EnterprisePlatform.Configuration.StyleElementCollection.CreateNewElement">
+            <summary>
+            Creates a new <see cref="T:CN100.EnterprisePlatform.Configuration.StyleElement"/>.
+            </summary>
+            <returns>
+            A new <see cref="T:CN100.EnterprisePlatform.Configuration.StyleElement"/>.
+            </returns>
+        </member>
+        <member name="M:CN100.EnterprisePlatform.Configuration.StyleElementCollection.Add(CN100.EnterprisePlatform.Configuration.StyleElement)">
+            <summary>
+            Adds the specified <see cref="T:CN100.EnterprisePlatform.Configuration.StyleElement"/> to the <see cref="T:System.Configuration.ConfigurationElementCollection"/>.
+            </summary>
+            <param name="url">The <see cref="T:CN100.EnterprisePlatform.Configuration.StyleElement"/> to add.</param>
+        </member>
+        <member name="M:CN100.EnterprisePlatform.Configuration.StyleElementCollection.Remove(CN100.EnterprisePlatform.Configuration.StyleElement)">
+            <summary>
+            Removes the specified <see cref="T:CN100.EnterprisePlatform.Configuration.StyleElement"/> from the <see cref="T:System.Configuration.ConfigurationElementCollection"/>.
+            </summary>
+            <param name="url">The <see cref="T:CN100.EnterprisePlatform.Configuration.StyleElement"/> to remove.</param>
+        </member>
+        <member name="M:CN100.EnterprisePlatform.Configuration.StyleElementCollection.GetItemAt(System.Int32)">
+            <summary>
+            Gets the <see cref="T:CN100.EnterprisePlatform.Configuration.StyleElement"/> at the specified index.
+            </summary>
+            <param name="index">The index of the <see cref="T:CN100.EnterprisePlatform.Configuration.StyleElement"/> to retrieve.</param>
+        </member>
+        <member name="M:CN100.EnterprisePlatform.Configuration.StyleElementCollection.GetItemByKey(System.String)">
+            <summary>
+            Gets the <see cref="T:CN100.EnterprisePlatform.Configuration.StyleElement"/> with the specified key.
+            </summary>
+            <param name="name">The key of the <see cref="T:CN100.EnterprisePlatform.Configuration.StyleElement"/> to retrieve.</param>
+        </member>
+        <member name="M:CN100.EnterprisePlatform.Configuration.StyleElementCollection.IsReadOnly">
+            <summary>
+            Gets a value indicating whether the element is read-only.
+            </summary>
+        </member>
+        <member name="P:CN100.EnterprisePlatform.Configuration.StyleElementCollection.CollectionType">
+            <summary>
+            Gets the type of the <see cref="T:System.Configuration.ConfigurationElementCollection"/>.
+            </summary>
+            <returns>The <see cref="T:System.Configuration.ConfigurationElementCollectionType"/> of this collection.</returns>
+        </member>
+        <member name="P:CN100.EnterprisePlatform.Configuration.StyleElementCollection.ElementName">
+            <summary>
+            Gets the name used to identify this collection of elements
+            </summary>
+        </member>
+        <member name="P:CN100.EnterprisePlatform.Configuration.StyleElementCollection.Item(System.Int32)">
+            <summary>
+            Gets the <see cref="T:CN100.EnterprisePlatform.Configuration.StyleElement"/> at the specified index.
+            </summary>
+            <param name="index">The index of the <see cref="T:CN100.EnterprisePlatform.Configuration.StyleElement"/> to retrieve.</param>
+        </member>
+        <member name="P:CN100.EnterprisePlatform.Configuration.StyleElementCollection.Item(System.Object)">
+            <summary>
+            Gets the <see cref="T:CN100.EnterprisePlatform.Configuration.StyleElement"/> with the specified key.
+            </summary>
+            <param name="name">The key of the <see cref="T:CN100.EnterprisePlatform.Configuration.StyleElement"/> to retrieve.</param>
+        </member>
+        <member name="T:CN100.EnterprisePlatform.Configuration.StyleElement">
+            <summary>
+            The StyleElement Configuration Element.
+            </summary>
+        </member>
+        <member name="F:CN100.EnterprisePlatform.Configuration.StyleElement.NamePropertyName">
+            <summary>
+            The XML name of the <see cref="P:CN100.EnterprisePlatform.Configuration.StyleElement.Name"/> property.
+            </summary>
+        </member>
+        <member name="F:CN100.EnterprisePlatform.Configuration.StyleElement.UrlPropertyName">
+            <summary>
+            The XML name of the <see cref="P:CN100.EnterprisePlatform.Configuration.StyleElement.Url"/> property.
+            </summary>
+        </member>
+        <member name="M:CN100.EnterprisePlatform.Configuration.StyleElement.IsReadOnly">
+            <summary>
+            Gets a value indicating whether the element is read-only.
+            </summary>
+        </member>
+        <member name="P:CN100.EnterprisePlatform.Configuration.StyleElement.Name">
+            <summary>
+            Gets or sets the Name.
+            </summary>
+        </member>
+        <member name="P:CN100.EnterprisePlatform.Configuration.StyleElement.Url">
+            <summary>
+            Gets or sets the Url.
+            </summary>
+        </member>
+        <member name="T:CN100.EnterprisePlatform.Configuration.EmailSection">
+            <summary>
+            The EmailSection Configuration Section.
+            </summary>
+        </member>
+        <member name="F:CN100.EnterprisePlatform.Configuration.EmailSection.EmailSectionSectionName">
+            <summary>
+            The XML name of the EmailSection Configuration Section.
+            </summary>
+        </member>
+        <member name="F:CN100.EnterprisePlatform.Configuration.EmailSection.XmlnsPropertyName">
+            <summary>
+            The XML name of the <see cref="P:CN100.EnterprisePlatform.Configuration.EmailSection.Xmlns"/> property.
+            </summary>
+        </member>
+        <member name="F:CN100.EnterprisePlatform.Configuration.EmailSection.HostsPropertyName">
+            <summary>
+            The XML name of the <see cref="P:CN100.EnterprisePlatform.Configuration.EmailSection.Hosts"/> property.
+            </summary>
+        </member>
+        <member name="M:CN100.EnterprisePlatform.Configuration.EmailSection.IsReadOnly">
+            <summary>
+            Gets a value indicating whether the element is read-only.
+            </summary>
+        </member>
+        <member name="P:CN100.EnterprisePlatform.Configuration.EmailSection.Instance">
+            <summary>
+            Gets the EmailSection instance.
+            </summary>
+        </member>
+        <member name="P:CN100.EnterprisePlatform.Configuration.EmailSection.Xmlns">
+            <summary>
+            Gets the XML namespace of this Configuration Section.
+            </summary>
+            <remarks>
+            This property makes sure that if the configuration file contains the XML namespace,
+            the parser doesn't throw an exception because it encounters the unknown "xmlns" attribute.
+            </remarks>
+        </member>
+        <member name="P:CN100.EnterprisePlatform.Configuration.EmailSection.Hosts">
+            <summary>
+            Gets or sets the Hosts.
+            </summary>
+        </member>
+        <member name="T:CN100.EnterprisePlatform.Configuration.EmailElementCollection">
+            <summary>
+            A collection of EmailElement instances.
+            </summary>
+        </member>
+        <member name="F:CN100.EnterprisePlatform.Configuration.EmailElementCollection.EmailElementPropertyName">
+            <summary>
+            The XML name of the individual <see cref="T:CN100.EnterprisePlatform.Configuration.EmailElement"/> instances in this collection.
+            </summary>
+        </member>
+        <member name="M:CN100.EnterprisePlatform.Configuration.EmailElementCollection.IsElementName(System.String)">
+            <summary>
+            Indicates whether the specified <see cref="T:System.Configuration.ConfigurationElement"/> exists in the <see cref="T:System.Configuration.ConfigurationElementCollection"/>.
+            </summary>
+            <param name="elementName">The name of the element to verify.</param>
+            <returns>
+            <see langword="true"/> if the element exists in the collection; otherwise, <see langword="false"/>.
+            </returns>
+        </member>
+        <member name="M:CN100.EnterprisePlatform.Configuration.EmailElementCollection.GetElementKey(System.Configuration.ConfigurationElement)">
+            <summary>
+            Gets the element key for the specified configuration element.
+            </summary>
+            <param name="element">The <see cref="T:System.Configuration.ConfigurationElement"/> to return the key for.</param>
+            <returns>
+            An <see cref="T:System.Object"/> that acts as the key for the specified <see cref="T:System.Configuration.ConfigurationElement"/>.
+            </returns>
+        </member>
+        <member name="M:CN100.EnterprisePlatform.Configuration.EmailElementCollection.CreateNewElement">
+            <summary>
+            Creates a new <see cref="T:CN100.EnterprisePlatform.Configuration.EmailElement"/>.
+            </summary>
+            <returns>
+            A new <see cref="T:CN100.EnterprisePlatform.Configuration.EmailElement"/>.
+            </returns>
+        </member>
+        <member name="M:CN100.EnterprisePlatform.Configuration.EmailElementCollection.Add(CN100.EnterprisePlatform.Configuration.EmailElement)">
+            <summary>
+            Adds the specified <see cref="T:CN100.EnterprisePlatform.Configuration.EmailElement"/> to the <see cref="T:System.Configuration.ConfigurationElementCollection"/>.
+            </summary>
+            <param name="host">The <see cref="T:CN100.EnterprisePlatform.Configuration.EmailElement"/> to add.</param>
+        </member>
+        <member name="M:CN100.EnterprisePlatform.Configuration.EmailElementCollection.Remove(CN100.EnterprisePlatform.Configuration.EmailElement)">
+            <summary>
+            Removes the specified <see cref="T:CN100.EnterprisePlatform.Configuration.EmailElement"/> from the <see cref="T:System.Configuration.ConfigurationElementCollection"/>.
+            </summary>
+            <param name="host">The <see cref="T:CN100.EnterprisePlatform.Configuration.EmailElement"/> to remove.</param>
+        </member>
+        <member name="M:CN100.EnterprisePlatform.Configuration.EmailElementCollection.GetItemAt(System.Int32)">
+            <summary>
+            Gets the <see cref="T:CN100.EnterprisePlatform.Configuration.EmailElement"/> at the specified index.
+            </summary>
+            <param name="index">The index of the <see cref="T:CN100.EnterprisePlatform.Configuration.EmailElement"/> to retrieve.</param>
+        </member>
+        <member name="M:CN100.EnterprisePlatform.Configuration.EmailElementCollection.GetItemByKey(System.String)">
+            <summary>
+            Gets the <see cref="T:CN100.EnterprisePlatform.Configuration.EmailElement"/> with the specified key.
+            </summary>
+            <param name="name">The key of the <see cref="T:CN100.EnterprisePlatform.Configuration.EmailElement"/> to retrieve.</param>
+        </member>
+        <member name="M:CN100.EnterprisePlatform.Configuration.EmailElementCollection.IsReadOnly">
+            <summary>
+            Gets a value indicating whether the element is read-only.
+            </summary>
+        </member>
+        <member name="P:CN100.EnterprisePlatform.Configuration.EmailElementCollection.CollectionType">
+            <summary>
+            Gets the type of the <see cref="T:System.Configuration.ConfigurationElementCollection"/>.
+            </summary>
+            <returns>The <see cref="T:System.Configuration.ConfigurationElementCollectionType"/> of this collection.</returns>
+        </member>
+        <member name="P:CN100.EnterprisePlatform.Configuration.EmailElementCollection.ElementName">
+            <summary>
+            Gets the name used to identify this collection of elements
+            </summary>
+        </member>
+        <member name="P:CN100.EnterprisePlatform.Configuration.EmailElementCollection.Item(System.Int32)">
+            <summary>
+            Gets the <see cref="T:CN100.EnterprisePlatform.Configuration.EmailElement"/> at the specified index.
+            </summary>
+            <param name="index">The index of the <see cref="T:CN100.EnterprisePlatform.Configuration.EmailElement"/> to retrieve.</param>
+        </member>
+        <member name="P:CN100.EnterprisePlatform.Configuration.EmailElementCollection.Item(System.Object)">
+            <summary>
+            Gets the <see cref="T:CN100.EnterprisePlatform.Configuration.EmailElement"/> with the specified key.
+            </summary>
+            <param name="name">The key of the <see cref="T:CN100.EnterprisePlatform.Configuration.EmailElement"/> to retrieve.</param>
+        </member>
+        <member name="T:CN100.EnterprisePlatform.Configuration.EmailElement">
+            <summary>
+            The EmailElement Configuration Element.
+            </summary>
+        </member>
+        <member name="F:CN100.EnterprisePlatform.Configuration.EmailElement.NamePropertyName">
+            <summary>
+            The XML name of the <see cref="P:CN100.EnterprisePlatform.Configuration.EmailElement.Name"/> property.
+            </summary>
+        </member>
+        <member name="F:CN100.EnterprisePlatform.Configuration.EmailElement.AddressPropertyName">
+            <summary>
+            The XML name of the <see cref="P:CN100.EnterprisePlatform.Configuration.EmailElement.Address"/> property.
+            </summary>
+        </member>
+        <member name="F:CN100.EnterprisePlatform.Configuration.EmailElement.AccountPropertyName">
+            <summary>
+            The XML name of the <see cref="P:CN100.EnterprisePlatform.Configuration.EmailElement.Account"/> property.
+            </summary>
+        </member>
+        <member name="F:CN100.EnterprisePlatform.Configuration.EmailElement.PasswordPropertyName">
+            <summary>
+            The XML name of the <see cref="P:CN100.EnterprisePlatform.Configuration.EmailElement.Password"/> property.
+            </summary>
+        </member>
+        <member name="M:CN100.EnterprisePlatform.Configuration.EmailElement.IsReadOnly">
+            <summary>
+            Gets a value indicating whether the element is read-only.
+            </summary>
+        </member>
+        <member name="P:CN100.EnterprisePlatform.Configuration.EmailElement.Name">
+            <summary>
+            Gets the mail server address
+            </summary>
+        </member>
+        <member name="P:CN100.EnterprisePlatform.Configuration.EmailElement.Address">
+            <summary>
+            Gets mailing address
+            </summary>
+        </member>
+        <member name="P:CN100.EnterprisePlatform.Configuration.EmailElement.Account">
+            <summary>
+            Gets mail server login
+            </summary>
+        </member>
+        <member name="P:CN100.EnterprisePlatform.Configuration.EmailElement.Password">
+            <summary>
+            Gets mail server login password
+            </summary>
+        </member>
+        <member name="P:CN100.EnterprisePlatform.Configuration.Utils.WcfHancler">
+            <summary>
+            WCF帮助
+            </summary>
+        </member>
+        <member name="P:CN100.EnterprisePlatform.Configuration.Utils.StyleDomainHelper">
+            <summary>
+            样式域名帮助
+            </summary>
+        </member>
+        <member name="P:CN100.EnterprisePlatform.Configuration.Utils.ImageDomainHelper">
+            <summary>
+            图片域名帮助
+            </summary>
+        </member>
+        <member name="P:CN100.EnterprisePlatform.Configuration.Utils.DomainHelper">
+            <summary>
+            域名帮助
+            </summary>
+        </member>
+        <member name="P:CN100.EnterprisePlatform.Configuration.Utils.SearchConfigHelper">
+            <summary>
+            搜索Config帮助
+            </summary>
+        </member>
+        <member name="P:CN100.EnterprisePlatform.Configuration.Utils.MQConfigHelper">
+            <summary>
+            MQ配置节帮助
+            </summary>
+        </member>
+        <member name="P:CN100.EnterprisePlatform.Configuration.Utils.EmailConfigHelper">
+            <summary>
+            Email配置节帮助
+            </summary>
+        </member>
+        <member name="T:CN100.EnterprisePlatform.Configuration.StyleDomainHelper">
+            <summary>
+            样式域名帮助
+            </summary>
+        </member>
+        <member name="P:CN100.EnterprisePlatform.Configuration.StyleDomainHelper.StyleDomain">
+            <summary>
+            样式域名帮助
+            </summary>
+        </member>
+        <member name="T:CN100.EnterprisePlatform.Configuration.MQConfigHelper">
+            <summary>
+            TODO: Update summary.
+            </summary>
+        </member>
+        <member name="T:CN100.EnterprisePlatform.Configuration.ImageDomainHelper">
+            <summary>
+            图片域名帮助
+            </summary>
+        </member>
+        <member name="P:CN100.EnterprisePlatform.Configuration.ImageDomainHelper.ImageDomain">
+            <summary>
+            图片域名
+            </summary>
+        </member>
+    </members>
+</doc>

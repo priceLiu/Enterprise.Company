@@ -1,0 +1,32 @@
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+在Web.Config配置节点
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  <configSections>
+    <sectionGroup name="CN100SectionGroup" type="System.Configuration.ConfigurationSectionGroup, System.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <section name="searchSection" type="CN100.EnterprisePlatform.Configuration.SearchSection, CN100.EnterprisePlatform.Configuration"/>
+    </sectionGroup>
+  </configSections>
+  <CN100SectionGroup xmlns="CN100.EnterprisePlatform.Configuration">
+    <!--搜索配置节-->
+    <searchSection>
+      <search>
+        <!--索引库保存位置(虚拟目录)-->
+        <add key="productdirectory" value="ProductDirectory"/>
+        <!--索引库保存位置(本地磁盘)-->
+        <add key="productpath" value="D:\SearchIndex"/>
+        <!--隔间更新索引时间-->
+        <add key="jobtime" value="5,7,9,14,23"/>
+        <!--索引库位置-->
+        <add key="dictpath" value="E:\CN100\svn\CN100.SearchEngine\1.03\SearchEngine\dict\"/>
+      </search>
+    </searchSection>
+  </CN100SectionGroup>
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+使用配置节
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+1、引用CN100.EnterprisePlatform.Configuration.dll
+2、using CN100.EnterprisePlatform.Configuration;
+3、Utils.SearchConfigHelper.ProductDirectory
+   Utils.SearchConfigHelper.ProductPath
+   Utils.SearchConfigHelper.JobTime
+   Utils.SearchConfigHelper.DictPath

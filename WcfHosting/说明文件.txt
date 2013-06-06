@@ -1,0 +1,23 @@
+WCF客户端配置
+在appSettings加
+  <add key="SERVER_IPADDRESS" value="192.168.0.111"/>
+  <add key="SERVER_PORT" value="9999"/>
+IP地址修改为相应的值
+WCF客户端调用其他项目的WCF服务
+<configSections>
+    <section name="wcfclient" type="CN100.EnterprisePlatform.Wcf.Core.ClientFactorySelection,CN100.EnterprisePlatform.Wcf.Core"/>
+  </configSections>
+  <wcfclient>
+    <Host>
+      <add ip="127.0.0.1" port="9999" />
+    </Host>
+  </wcfclient>
+如：
+ public class UserManager
+    {
+        static WcfClientFactory factory;
+        static UserManager()
+        {
+             factory = new WcfClientFactory("wcfclient");        
+        }
+    }

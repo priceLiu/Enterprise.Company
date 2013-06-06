@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<urls>
+  <url match="^.*\.aspx" expiry="2" />
+</urls>

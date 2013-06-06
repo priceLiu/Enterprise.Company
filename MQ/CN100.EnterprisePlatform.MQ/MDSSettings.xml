@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MDSConfiguration>
+  
+  <Settings>
+    <Setting Key="ThisServerName" Value="this_server" />
+    <Setting Key="StorageType" Value="MSSQL" />
+	  <Setting Key="ConnectionString" Value="Data Source=192.168.0.36,4793;Initial Catalog=CN100MQ;uid=sa;pwd=123a@cn100.com" />
+  </Settings>
+  
+  <Servers>
+    <Server Name="this_server" IpAddress="192.168.0.36" Port="10905" Adjacents="" />
+  </Servers>
+  
+  <Applications>    
+  </Applications>
+  
+  <Routes>    
+  </Routes>
+  
+</MDSConfiguration>

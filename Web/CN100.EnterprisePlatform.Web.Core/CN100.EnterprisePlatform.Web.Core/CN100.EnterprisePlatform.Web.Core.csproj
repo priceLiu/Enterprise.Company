@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F1E64020-E5EE-45A5-9819-79A248433653}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CN100.EnterprisePlatform.Web.Core</RootNamespace>
+    <AssemblyName>CN100.EnterprisePlatform.Web.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Smark.Core">
+      <HintPath>Lib\Smark.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Binders\BindAttribute.cs" />
+    <Compile Include="Binders\BinderAdapter.cs" />
+    <Compile Include="Binders\Class1.cs" />
+    <Compile Include="Binders\ClassBinder.cs" />
+    <Compile Include="Binders\Converts.cs" />
+    <Compile Include="Binders\CoreFunction.cs" />
+    <Compile Include="Binders\IConvert.cs" />
+    <Compile Include="Binders\IValidater.cs" />
+    <Compile Include="Binders\OutAttribute.cs" />
+    <Compile Include="Binders\PropertyBinder.cs" />
+    <Compile Include="Binders\ValidaterException.cs" />
+    <Compile Include="CacheModule.cs" />
+    <Compile Include="Despatch.cs" />
+    <Compile Include="GetUrlItem.cs" />
+    <Compile Include="HtmlElement.cs" />
+    <Compile Include="HtmlHelper.cs" />
+    <Compile Include="IDespatchItem.cs" />
+    <Compile Include="ImageHelper.cs" />
+    <Compile Include="KeyValueCollections.cs" />
+    <Compile Include="PageCacheItem.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UrlMatch.cs" />
+    <Compile Include="WebContext.cs" />
+    <Compile Include="WebContextModule.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="urls.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\..\CN100.EnterprisePlatform\CN100.EnterprisePlatform.Configuration\CN100.EnterprisePlatform.Configuration.Designer\CN100.EnterprisePlatform.Configuration.csproj">
+      <Project>{03DB2CA6-0C61-46F3-AD8B-C7D0B0B19A26}</Project>
+      <Name>CN100.EnterprisePlatform.Configuration</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

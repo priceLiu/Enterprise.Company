@@ -1,0 +1,219 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CN100.EnterprisePlatform.Wcf.Core</name>
+    </assembly>
+    <members>
+        <member name="T:CN100.EnterprisePlatform.Wcf.Core.WcfTcpClient`1">
+            <summary>
+            WcfTcp连接对象
+            </summary>
+            <typeparam name="T">服务通道类型</typeparam>
+        </member>
+        <member name="M:CN100.EnterprisePlatform.Wcf.Core.WcfTcpClient`1.Dispose">
+            <summary>
+            释放当前对象，使用完成注意调用此方法s
+            </summary>
+        </member>
+        <member name="P:CN100.EnterprisePlatform.Wcf.Core.WcfTcpClient`1.Channel">
+            <summary>
+            获取对应的服务通道
+            </summary>
+        </member>
+        <member name="T:CN100.EnterprisePlatform.Wcf.Core.WcfTcpServer">
+            <summary>
+            WcfTcp服务类
+            </summary>
+        </member>
+        <member name="M:CN100.EnterprisePlatform.Wcf.Core.WcfTcpServer.#ctor">
+            <summary>
+            构建服务类
+            </summary>
+        </member>
+        <member name="M:CN100.EnterprisePlatform.Wcf.Core.WcfTcpServer.LoadInterfaceAssembly(System.Reflection.Assembly)">
+            <summary>
+            从程序集中加载所有服务描述
+            </summary>
+            <param name="assembly">Assembly</param>
+        </member>
+        <member name="M:CN100.EnterprisePlatform.Wcf.Core.WcfTcpServer.LoadImplAssembly(System.Reflection.Assembly)">
+            <summary>
+            从程序集中加载所有服务实现
+            </summary>
+            <param name="assembly">Assembly</param>
+        </member>
+        <member name="M:CN100.EnterprisePlatform.Wcf.Core.WcfTcpServer.Start">
+            <summary>
+            启动服务,在执行些方法前请按顺序执行以下方法
+            LoadInterfaceAssembly
+            LoadImplAssembly
+            </summary>
+        </member>
+        <member name="M:CN100.EnterprisePlatform.Wcf.Core.WcfTcpServer.Dispose">
+            <summary>
+            释放wcf服务
+            </summary>
+        </member>
+        <member name="P:CN100.EnterprisePlatform.Wcf.Core.WcfTcpServer.Address">
+            <summary>
+            获取或设置监听地址，默认是localhost
+            </summary>
+        </member>
+        <member name="P:CN100.EnterprisePlatform.Wcf.Core.WcfTcpServer.Port">
+            <summary>
+            获取或设置监听端口,默认是9999
+            </summary>
+        </member>
+        <member name="P:CN100.EnterprisePlatform.Wcf.Core.WcfTcpServer.Binding">
+            <summary>
+            获取或设置一个NetTcpBinding信息
+            </summary>
+        </member>
+        <member name="P:CN100.EnterprisePlatform.Wcf.Core.WcfTcpServer.Services">
+            <summary>
+            获取相关加载的服务描述
+            </summary>
+        </member>
+        <member name="T:CN100.EnterprisePlatform.Wcf.Core.ServiceDescription">
+            <summary>
+            服务描述
+            </summary>
+        </member>
+        <member name="P:CN100.EnterprisePlatform.Wcf.Core.ServiceDescription.IType">
+            <summary>
+            服务类型接口
+            </summary>
+        </member>
+        <member name="P:CN100.EnterprisePlatform.Wcf.Core.ServiceDescription.ImplType">
+            <summary>
+            服务类型接口实现类
+            </summary>
+        </member>
+        <member name="P:CN100.EnterprisePlatform.Wcf.Core.ServiceDescription.Host">
+            <summary>
+            对应的ServiceHost
+            </summary>
+        </member>
+        <member name="P:CN100.EnterprisePlatform.Wcf.Core.ServiceDescription.Name">
+            <summary>
+            服务名称
+            </summary>
+        </member>
+        <member name="T:CN100.EnterprisePlatform.Wcf.Core.WcfTcpClientPool`1">
+            <summary>
+            WcfTcp客户端连接池类
+            </summary>
+            <typeparam name="T">对应的服务类型</typeparam>
+        </member>
+        <member name="T:CN100.EnterprisePlatform.Wcf.Core.IClientPool">
+            <summary>
+            连接池
+            </summary>
+        </member>
+        <member name="M:CN100.EnterprisePlatform.Wcf.Core.IClientPool.Pop">
+            <summary>
+            获取连接
+            </summary>
+            <returns>object</returns>
+        </member>
+        <member name="M:CN100.EnterprisePlatform.Wcf.Core.IClientPool.Push(System.Object)">
+            <summary>
+            回收对象
+            </summary>
+            <param name="client">object</param>
+        </member>
+        <member name="P:CN100.EnterprisePlatform.Wcf.Core.IClientPool.IsDisplsed">
+            <summary>
+            当前池是否已经释放
+            </summary>
+        </member>
+        <member name="M:CN100.EnterprisePlatform.Wcf.Core.WcfTcpClientPool`1.#ctor(System.ServiceModel.Channels.Binding,System.String)">
+            <summary>
+            初始化池
+            </summary>
+            <param name="binding">Binding方式</param>
+            <param name="address">服务地址</param>
+        </member>
+        <member name="M:CN100.EnterprisePlatform.Wcf.Core.WcfTcpClientPool`1.Pop">
+            <summary>
+            从池中获取一个连接
+            </summary>
+            <returns>object</returns>
+        </member>
+        <member name="M:CN100.EnterprisePlatform.Wcf.Core.WcfTcpClientPool`1.Push(System.Object)">
+            <summary>
+            把连接回收到池中
+            </summary>
+            <param name="client">object</param>
+        </member>
+        <member name="M:CN100.EnterprisePlatform.Wcf.Core.WcfTcpClientPool`1.Dispose">
+            <summary>
+            释放当前池
+            </summary>
+        </member>
+        <member name="T:CN100.EnterprisePlatform.Wcf.Core.CN100WcfException">
+            <summary>
+            相关Wcf异步类
+            </summary>
+        </member>
+        <member name="M:CN100.EnterprisePlatform.Wcf.Core.CN100WcfException.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:CN100.EnterprisePlatform.Wcf.Core.CN100WcfException.#ctor(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="msg"></param>
+        </member>
+        <member name="M:CN100.EnterprisePlatform.Wcf.Core.CN100WcfException.#ctor(System.String,System.Exception)">
+            <summary>
+            
+            </summary>
+            <param name="msg"></param>
+            <param name="innererror"></param>
+        </member>
+        <member name="M:CN100.EnterprisePlatform.Wcf.Core.CN100WcfException.SERVER_CONTRACT_NOFOUND">
+            <summary>
+            获取一个描述ServiceContract标记不存在的异常
+            </summary>
+            <returns>CN100WcfException</returns>
+        </member>
+        <member name="T:CN100.EnterprisePlatform.Wcf.Core.WcfClientFactory">
+            <summary>
+            WCF连接创建工厂
+            </summary>
+        </member>
+        <member name="M:CN100.EnterprisePlatform.Wcf.Core.WcfClientFactory.#cctor">
+            <summary>
+            初始化信息
+            监听地址默认是localhost
+            监听端口默认是9999
+            连接池数默认10个
+            构建一个默认的NetTcpBinding
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:CN100.EnterprisePlatform.Wcf.Core.WcfClientFactory.CreateClient``1" -->
+        <member name="P:CN100.EnterprisePlatform.Wcf.Core.WcfClientFactory.DefaultConnections">
+            <summary>
+            获取或设置client默认的连接池数
+            </summary>
+        </member>
+        <member name="P:CN100.EnterprisePlatform.Wcf.Core.WcfClientFactory.Binding">
+            <summary>
+            获取或设置对应的NetTcpBinding信息
+            </summary>
+        </member>
+        <member name="P:CN100.EnterprisePlatform.Wcf.Core.WcfClientFactory.Address">
+            <summary>
+            获取或设置监听的IP地址
+            </summary>
+        </member>
+        <member name="P:CN100.EnterprisePlatform.Wcf.Core.WcfClientFactory.Port">
+            <summary>
+            获取或设置监听的端口
+            </summary>
+        </member>
+    </members>
+</doc>

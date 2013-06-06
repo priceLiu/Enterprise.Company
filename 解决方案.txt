@@ -1,0 +1,4 @@
+ \CN100.EnterprisePlatform\CN100.EnterprisePlatform.Wcf.Sample\CN100.EnterprisePlatform.Wcf.Core CN100.EnterprisePlatform.Wcf.Core.sln
+ \CN100.EnterprisePlatform\CN100.EnterprisePlatform.Configuration CN100.EnterprisePlatform.Configuration.sln
+ \CN100.EnterprisePlatform\Core  CN100.EnterprisePlatform.ORM.sln
+  \CN100.EnterprisePlatform\Core  CN100.EnterprisePlatform.Utility.sln

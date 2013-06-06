@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B591E594-8034-4CC4-9FE4-BCB75CF65D82}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Wcf.Test.Hosting</RootNamespace>
+    <AssemblyName>Wcf.Test.Hosting</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BlowfishNET">
+      <HintPath>..\..\..\..\CN100.EnterprisePlatform.QualityCenter\DLL\BlowfishNET.dll</HintPath>
+    </Reference>
+    <Reference Include="Smark.Core">
+      <HintPath>..\..\..\..\CN100.EnterprisePlatform.QualityCenter\DLL\Smark.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Smark.Data">
+      <HintPath>..\..\..\..\CN100.EnterprisePlatform.QualityCenter\DLL\Smark.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\CN100.EnterprisePlatform.QualityCenter\CN100.EnterprisePlatform.QualityCenter.BLL.Model\CN100.EnterprisePlatform.QualityCenter.BLL.Model.csproj">
+      <Project>{6B986353-6136-43E1-ADE6-FE4E67B96E2B}</Project>
+      <Name>CN100.EnterprisePlatform.QualityCenter.BLL.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\CN100.EnterprisePlatform.QualityCenter\CN100.EnterprisePlatform.QualityCenter.BLL\CN100.EnterprisePlatform.QualityCenter.BLL.csproj">
+      <Project>{71A9AE4C-21C9-455E-9DAF-68A40AC83010}</Project>
+      <Name>CN100.EnterprisePlatform.QualityCenter.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\CN100.EnterprisePlatform.QualityCenter\CN100.EnterprisePlatform.QualityCenter.Core\CN100.EnterprisePlatform.QualityCenter.Core.csproj">
+      <Project>{1C754E0F-A5F7-4E83-B03F-A46B5E1553FB}</Project>
+      <Name>CN100.EnterprisePlatform.QualityCenter.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\CN100.EnterprisePlatform.QualityCenter\CN100.EnterprisePlatform.QualityCenter.DAL\CN100.EnterprisePlatform.QualityCenter.DAL.csproj">
+      <Project>{CE78F2DC-7D08-4E3B-9787-1647210C10B6}</Project>
+      <Name>CN100.EnterprisePlatform.QualityCenter.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\CN100.EnterprisePlatform.QualityCenter\CN100.EnterprisePlatform.QualityCenter.IBLL\CN100.EnterprisePlatform.QualityCenter.IBLL.csproj">
+      <Project>{D1914335-3948-4E78-8B9F-106A506B055F}</Project>
+      <Name>CN100.EnterprisePlatform.QualityCenter.IBLL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
