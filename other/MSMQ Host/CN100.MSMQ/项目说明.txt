@@ -1,0 +1,72 @@
+﻿CN100.MSMQ项目使用示例：
+
+//配置示例
+//     配置说明：connectionName:连接名称  host:MSMQ服务器地址  queueName:队列名  isTransactional:是否是事务性队列  MaxThreads消息队列接收最大线程数
+<configuration>
+  <configSections>
+    <section name="MSMQSection" type="CN100.MSMQ.MSMQSection, CN100.MSMQ"/>
+  </configSections>
+  <MSMQSection>
+    <Connections MaxThreads="30">
+      <add connectionName="tran_queue" host="192.168.0.98" queueName="test" isTransactional="true"/>
+      <add connectionName="defa_queue" host="192.168.0.98" queueName="queue" isTransactional="false"/>
+    </Connections>
+  </MSMQSection>
+</configuration>
+
+
+/***********************************代码（对于非事务性队列）************************************/
+//发送消息
+private void button1_Click(object sender, EventArgs e)
+{
+    CN100.MSMQ.PoolClientManager client = new CN100.MSMQ.PoolClientManager("defa_queue");
+    client.Send("dddd");
+
+    //消息消费者创建
+    CN100.MSMQ.MessageConsumer consumer = client.CreateMessageConsumer();
+    consumer.Listener += new CN100.MSMQ.MessageConsumer.MessageListener(consumer_Listener);  //接收消息
+}
+
+/// <summary>
+/// 消息侦听
+/// </summary>
+/// <param name="message"></param>
+private void consumer_Listener(CN100.MSMQ.MQMessage message)
+{
+	string str = message.messageContent;
+	Console.WriteLine(str)
+}
+
+
+/***********************************代码（对于事务性队列）************************************/
+/*
+	注：1、侦听消息时，当事务回滚之后，消息不会从MQ服务器上移除，会一直发送该消息到客户端进行处理，知道Commit为止
+*/
+//发送消息
+private void button1_Click(object sender, EventArgs e)
+{
+    CN100.MSMQ.PoolClientManager client = new CN100.MSMQ.PoolClientManager("defa_queue");
+    client.Send("dddd");
+
+    //消息消费者创建
+    CN100.MSMQ.MessageConsumer consumer = client.CreateMessageConsumer();
+    consumer.Listener += new CN100.MSMQ.MessageConsumer.MessageListener(consumer_Listener);  //接收消息
+}
+
+/// <summary>
+/// 消息侦听
+/// </summary>
+/// <param name="message"></param>
+private void consumer_Listener(CN100.MSMQ.MQMessage message)
+{
+	try
+    {
+        string str = message.messageContent;
+		Console.WriteLine(str)
+        message.Commit();  //提交事务
+    }
+    catch
+    {
+        message.RollBack();  //事务回滚
+    }
+}

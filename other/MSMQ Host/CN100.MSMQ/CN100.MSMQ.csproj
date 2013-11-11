@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{882E65E5-35BD-4573-93F7-52C14D63C0BB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CN100.MSMQ</RootNamespace>
+    <AssemblyName>CN100.MSMQ</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CN100.ProductDetail.Common">
+      <HintPath>..\CN100.ProductDetail.Common\bin\Debug\CN100.ProductDetail.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.11.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MessageConsumer.cs" />
+    <Compile Include="CN100MessageQueue.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MQMessage.cs" />
+    <Compile Include="MSMQConnectPool.cs" />
+    <Compile Include="MSMQSection.csd.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MSMQSection.csd</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ThreadPool\CallerThreadContext.cs" />
+    <Compile Include="ThreadPool\CanceledWorkItemsGroup.cs" />
+    <Compile Include="ThreadPool\EventWaitHandle.cs" />
+    <Compile Include="ThreadPool\EventWaitHandleFactory.cs" />
+    <Compile Include="ThreadPool\Exceptions.cs" />
+    <Compile Include="ThreadPool\Interfaces.cs" />
+    <Compile Include="ThreadPool\InternalInterfaces.cs" />
+    <Compile Include="ThreadPool\PriorityQueue.cs" />
+    <Compile Include="ThreadPool\SLExt.cs" />
+    <Compile Include="ThreadPool\SmartThreadPool.cs" />
+    <Compile Include="ThreadPool\SmartThreadPool.ThreadEntry.cs" />
+    <Compile Include="ThreadPool\Stopwatch.cs" />
+    <Compile Include="ThreadPool\STPEventWaitHandle.cs" />
+    <Compile Include="ThreadPool\STPPerformanceCounter.cs" />
+    <Compile Include="ThreadPool\STPStartInfo.cs" />
+    <Compile Include="ThreadPool\SynchronizedDictionary.cs" />
+    <Compile Include="ThreadPool\WIGStartInfo.cs" />
+    <Compile Include="ThreadPool\WorkItem.cs" />
+    <Compile Include="ThreadPool\WorkItem.WorkItemResult.cs" />
+    <Compile Include="ThreadPool\WorkItemFactory.cs" />
+    <Compile Include="ThreadPool\WorkItemInfo.cs" />
+    <Compile Include="ThreadPool\WorkItemResultTWrapper.cs" />
+    <Compile Include="ThreadPool\WorkItemsGroup.cs" />
+    <Compile Include="ThreadPool\WorkItemsGroupBase.cs" />
+    <Compile Include="ThreadPool\WorkItemsQueue.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="项目说明.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="MSMQSection.csd">
+      <Generator>CsdFileGenerator</Generator>
+      <LastGenOutput>MSMQSection.csd.cs</LastGenOutput>
+    </None>
+    <None Include="MSMQSection.csd.config">
+      <DependentUpon>MSMQSection.csd</DependentUpon>
+    </None>
+    <None Include="MSMQSection.csd.diagram">
+      <DependentUpon>MSMQSection.csd</DependentUpon>
+    </None>
+    <None Include="MSMQSection.csd.xsd">
+      <DependentUpon>MSMQSection.csd</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
